@@ -59,7 +59,8 @@ strong {
   padding-bottom: 10px;
 }
 .titrea i {
-  display: inline-flex;
+  padding-left: 70px;
+  padding-top: 33px;
 }
 
 .reservez {
@@ -102,9 +103,18 @@ strong {
   top: 1px;
 }
 
+.containera {
+  width: 400px;
+}
+
+.button2 {
+  background-color: #f6f6f6;
+}
+
 .containerf {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   background-color: #f6f6f6;
 }
 .containerf .box {
