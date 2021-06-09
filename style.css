@@ -16,7 +16,7 @@ h3 {
 
 strong {
   position: absolute;
-  right: 90px;
+  right: 50px;
 }
 
 .logo {
@@ -48,15 +48,16 @@ strong {
 .containera {
   position: relative;
   top: -50px;
+  width: 400px;
+  height: 1200px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #f6f6f6;
 }
 
 .titrea {
   display: flex;
   flex-direction: row;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  background-color: #f6f6f6;
-  padding-bottom: 10px;
 }
 .titrea i {
   padding-left: 70px;
@@ -101,10 +102,6 @@ strong {
 .myButton .myButton:hover .myButton:active {
   position: relative;
   top: 1px;
-}
-
-.containera {
-  width: 400px;
 }
 
 .button2 {
@@ -210,7 +207,6 @@ strong {
 footer {
   background-color: #353535;
   height: 200px;
-  margin-top: 30px;
 }
 footer img {
   padding-top: 20px;
