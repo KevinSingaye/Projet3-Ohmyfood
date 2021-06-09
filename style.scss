@@ -23,7 +23,7 @@ h3 {
 strong {
 
     position: absolute;
-    right: 90px;
+    right: 50px;
     }
 
 
@@ -71,6 +71,11 @@ strong {
 
     position: relative;
 top: -50px;
+width : 400px;
+height: 1200px;
+border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #f6f6f6;
 }
 
 .titrea{
@@ -85,10 +90,8 @@ padding-top: 33px;
 
 }
 
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    background-color: #f6f6f6;
-padding-bottom: 10px;
+   
+
 }
 
 .reservez {
@@ -145,17 +148,12 @@ padding-top: 10px;
 
 
 
-.containera {
 
-    width : 400px;
-    
-    
-
-}
 
 
 .button2 {
 background-color: #f6f6f6;
+
 }
 
 
@@ -211,10 +209,13 @@ line-height: 8px;
 
 
 
+    
 
     .option {
 
-        
+       
+
+       
 
         p {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -233,7 +234,6 @@ line-height: 8px;
 
 .box_fct:hover {
 
-    
 	background-color:#f5edff;
 }
 
@@ -319,7 +319,6 @@ footer {
 
 height: 200px;
 
-margin-top: 30px;
  img {
 padding-top: 20px;
     width: 100px;
