@@ -80,7 +80,8 @@ flex-direction: row;
 
 i{
 
-display: inline-flex;  
+padding-left: 70px;
+padding-top: 33px;
 
 }
 
@@ -107,6 +108,9 @@ padding-top: 10px;
 
 
 } 
+
+
+
 
 .myButton {
 	box-shadow:inset 0px 0px 0px 0px #efdcfb;
@@ -141,14 +145,25 @@ padding-top: 10px;
 
 
 
+.containera {
+
+    width : 400px;
+    
+    
+
+}
 
 
+.button2 {
+background-color: #f6f6f6;
+}
 
 
 .containerf {
 
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     background-color: #f6f6f6;
 
 
@@ -193,6 +208,10 @@ line-height: 8px;
     height: 1.25rem;
     border: none;
 
+
+
+
+
     .option {
 
         
@@ -202,13 +221,14 @@ line-height: 8px;
            font-size: 10px;
         line-height: 1px;
     }
-
+    }
     }
     }
   }
     }  
-  }
 
+
+   
 
 
 .box_fct:hover {
