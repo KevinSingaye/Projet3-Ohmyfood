@@ -153,6 +153,58 @@ strong {
   line-height: 1px;
 }
 
+.fade-in-text {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  color: black;
+  animation-name: topfadein linear 2s;
+  -webkit-animation: topfadeIn linear 2s;
+  -moz-animation: topfadeIn linear 2s;
+  -o-animation: topfadeIn linear 2s;
+  -ms-animation: topfadeIn linear 2s;
+}
+
+@keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .box_fct:hover {
   background-color: #f5edff;
 }
