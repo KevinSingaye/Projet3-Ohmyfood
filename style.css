@@ -59,7 +59,18 @@ strong {
   display: flex;
   flex-direction: row;
 }
-.titrea i {
+.titrea .fas {
+  display: flex;
+  font-size: 25px;
+  justify-content: flex-end;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+.titrea .fas .fas:hover {
+  color: #bc80ea;
+}
+.titrea .fas .fas:hover i {
   padding-left: 70px;
   padding-top: 33px;
 }
@@ -231,14 +242,13 @@ strong {
 }
 
 .far, .fa-heart {
-  font-size: 25px;
+  display: flex;
   justify-content: flex-end;
-  margin-right: 5px;
-  margin-bottom: 50px;
+  font-size: 25px;
 }
 
 .far:hover, .fa-heart:hover {
-  background-color: #bc80ea;
+  color: #bc80ea;
   cursor: pointer;
 }
 
@@ -264,10 +274,6 @@ footer img {
   padding-top: 20px;
   width: 100px;
   padding-left: 20px;
-}
-footer .fas, footer .fa {
-  color: white;
-  padding-right: 5px;
 }
 
 figure {
