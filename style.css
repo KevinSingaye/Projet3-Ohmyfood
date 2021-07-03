@@ -16,7 +16,7 @@ h3 {
 
 strong {
   position: absolute;
-  right: 50px;
+  right: 80px;
 }
 
 .logo {
@@ -73,6 +73,8 @@ strong {
 .titrea .fas .fas:hover i {
   padding-left: 70px;
   padding-top: 33px;
+  position: absolute;
+  top: 100px;
 }
 
 .reservez {
@@ -146,6 +148,7 @@ strong {
   -webkit-box-shadow: -3px 7px 12px 4px rgba(204, 189, 189, 0.84);
   -moz-box-shadow: -3px 7px 12px 4px rgba(204, 189, 189, 0.84);
   line-height: 8px;
+  height: 65px;
 }
 .containerf .box .box_fct .logo_fct {
   display: flex;
@@ -164,6 +167,20 @@ strong {
   line-height: 1px;
 }
 
+.cercle {
+  position: absolute;
+  left: 0px;
+  margin-top: -7px;
+  background: #9356dc;
+  border-radius: 100%;
+  color: #fff;
+  height: 25px;
+  width: 10px;
+  line-height: 1.67;
+  padding: 2px 10px;
+  font-weight: bold;
+}
+
 .fade-in-text {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
@@ -175,7 +192,82 @@ strong {
   -o-animation: topfadeIn linear 2s;
   -ms-animation: topfadeIn linear 2s;
 }
+.fade-in-text .icon {
+  width: 70px;
+  height: 75px;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  position: absolute;
+  right: 10px;
+  animation-play-state: paused;
+  border-radius: 20px;
+  opacity: 0;
+}
+.fade-in-text .icon i {
+  padding-top: 10px;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 40px;
+  -webkit-animation: rotate-center 1s ease-in-out both;
+  animation: rotate-center 1s ease-in-out both;
+  display: flex;
+  justify-items: flex-end;
+  animation-play-state: paused;
+  opacity: 0;
+}
 
+.icon:hover {
+  animation-play-state: running;
+  opacity: 1;
+}
+.icon:hover i:hover {
+  animation-play-state: running;
+  opacity: 1;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
 @keyframes topfadeIn {
   0% {
     opacity: 0;
@@ -259,6 +351,12 @@ strong {
 .texte .far {
   display: flex;
   margin-right: 30px;
+}
+
+.heart {
+  position: relative;
+  top: -90px;
+  left: -30px;
 }
 
 .button2 {
