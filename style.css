@@ -1,7 +1,6 @@
 p {
   font-size: 0.875rem;
   font-weight: 300;
-  padding-left: 15px;
 }
 
 h1 {
@@ -11,12 +10,11 @@ h1 {
 h3 {
   font-size: 1em;
   font-weight: bold;
-  padding-left: 15px;
 }
 
 strong {
   position: absolute;
-  right: 80px;
+  right: 20px;
 }
 
 .logo {
@@ -168,12 +166,19 @@ strong {
   line-height: 8px;
   height: 65px;
 }
-.containerf .box .repas .option p {
+.containerf .box .repas p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 10px;
   line-height: 1px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.option2 {
+  display: flex;
+  justify-content: left;
+  position: relative;
+  top: -10px;
 }
 
 .logo_fct {
@@ -328,7 +333,6 @@ strong {
   border-radius: 25px;
   color: black;
   padding: 15px 32px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -377,7 +381,6 @@ strong {
 }
 
 .texte {
-  margin-left: 13px;
   height: 100px;
 }
 .texte .far {
