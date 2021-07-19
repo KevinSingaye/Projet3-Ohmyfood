@@ -201,65 +201,23 @@ background-color: #f6f6f6;
     flex-direction: column;
     background-color: #f6f6f6;
 
-
-
-
-
-
-.box {
-
-    display: flex;
-    flex-flow: column wrap;
-    -webkit-animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-play-state: paused;
-
-
-    .repas {
-
-        display: flex;
-    align-items: center;
-    border-radius: 20px;
-    border: 1px solid #F2F2F2;
-    margin-left:10px;
-    margin-right: 10px;
-    padding-top: 5px;
-    padding-right: 120px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-bottom: 15px;
-    box-shadow: -3px 7px 12px 4px rgba(204,189,189,0.84);
-   -webkit-box-shadow: -3px 7px 12px 4px rgba(204,189,189,0.84);
-    -moz-box-shadow: -3px 7px 12px 4px rgba(204,189,189,0.84);
-   line-height: 8px;
-    height: 65px;
-
-
-
-    
-
-    
-
-    
-    
-
-
-  
-
-       
+       h2 { margin-left: 10px;
 
         p {
 
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-           font-size: 10px;
-        line-height: 1px;
+           font-size: 13px;
         overflow: hidden;
         text-overflow: ellipsis;
 
     }
     }
-    }
+  }
+    
+
+    .repas {
+      
+
     }
 
 
@@ -310,114 +268,100 @@ bottom: -15px;
 
 
 
-    .fade-in-text {
-        display: inline-block;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.875rem;
-        color: black;
-        animation-name: topfadein linear 2s;
-        -webkit-animation: topfadeIn linear 2s;
-        -moz-animation: topfadeIn linear 2s;
-        -o-animation: topfadeIn linear 2s;
-        -ms-animation: topfadeIn linear 2s;
-
-        
-       
-        
-     
+  
+      
     .icon {
 
-      width: 70px ;
-      height: 75px;
-   background-color: lightgreen ;
-   display: flex;
-    justify-content: center;
-  position: absolute;
-right: 10px;
-border-radius: 20px;
-opacity: 0;
-
-
-
-
-        i {
-
-            padding-top:10px;
-            margin-bottom: 5px;
-            color: white;
-            font-size: 40px;
-            -webkit-animation: rotate-center 1s ease-in-out both;
-	        animation: rotate-center 1s ease-in-out both;
-            display: flex;
-justify-items: flex-end;
-animation-play-state: paused;
-opacity: 0;
-        
-
-}}}
-
-
-
-    .icon:hover {
-  
-        animation-play-state: running;
-    opacity: 1;
-
-
-    i:hover {
-
-        animation-play-state: running;
-        opacity: 1;
+     display: none;
+     color: white;
 
     }
+
+    .icon i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-animation: rotate-center 0.6s ease-in-out both;
+      animation: rotate-center 0.6s ease-in-out both;
+    
     }
     
-   
+    .icon i:hover {
+    
+      transition-duration: 1s;
+      transition-timing-function: ease;
+      -webkit-animation: rotate-center 0.6s ease-in-out both;
+      animation: rotate-center 0.6s ease-in-out both;
+  
+
+    }
 
 
-    @-webkit-keyframes rotate-center {
-        0% {
-          -webkit-transform: rotate(0);
-                  transform: rotate(0);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
-        }
+
+
+    @-webkit-keyframes icon {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
       }
-      @keyframes rotate-center {
-        0% {
-          -webkit-transform: rotate(0);
-                  transform: rotate(0);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
-        }
+    
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
       }
+    }
+    
+    @keyframes rotate-center {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+    
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
       
-
-      
-    @-webkit-keyframes slide-left {
-        0% {
-          -webkit-transform: translateX(0);
-                  transform: translateX(0);
-        }
-        100% {
-          -webkit-transform: translateX(-100px);
-                  transform: translateX(-100px);
-        }
+    article:hover .icon {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      background-color: #99E2D0;
+      border-radius: 1px 20px 20px 1px;
+      animation-direction: reverse;
+      animation-duration: 1s;
+      animation-name: glissement;
+      opacity: 1;
+      animation: tt-expand 1s ease;
+    
+    }
+    
+    
+    @keyframes glissement {
+      from {
+        margin-right: 5%;
+    
       }
-      @keyframes slide-left {
-        0% {
-          -webkit-transform: translateX(0);
-                  transform: translateX(0);
-        }
-        100% {
-          -webkit-transform: translateX(-100px);
-                  transform: translateX(-100px);
-        }
+    
+      to {
+        margin-left: 0%;
+    
       }
+    }
+    
+    @keyframes tt-expand {
+      0% {
+        width: 0;
+        right: 65px;
+      }
+    
+      100% {
+        width: 55px;
+        right: 10px;
+      }
+    }
     
         
       
@@ -448,11 +392,12 @@ opacity: 0;
 
 
 
-      
-      .box_fct {
 
 
-display: flex;
+
+      .box_fcta {
+
+        display: flex;
 flex-direction: row;
 background-color: #F2F2F2;
   border-radius: 25px;
@@ -468,13 +413,37 @@ background-color: #F2F2F2;
   font-weight: bold;
   border: #c3c3c3;
   height: 40px;
+  width: 80%;
+      }
+      
+      .box_fct {
 
+
+display: flex;
+flex-direction: row;
+background-color: #F2F2F2;
+  border-radius: 20px;
+  color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+  cursor: pointer;
+  box-shadow: 0 5px 15px 0 #c3c3c3;
+  font-weight: bold;
+  border: #c3c3c3;
+  height: 45px;
+width:90%;
       }
 
       
 .box_fct:hover {
 
 	background-color:#f5edff;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+
 }
 
 
@@ -514,6 +483,12 @@ background-color: #F2F2F2;
     }
 }
 
+.restaurants h2 {
+
+  margin-left: 5px;
+
+}
+
 .far,  .fa-heart {
 
     display: flex;
@@ -543,16 +518,21 @@ cursor: pointer;
     
 height: 100px;
 
+h3, p {
+
+  margin-left: 10px;
+
     .far  {
 
 display: flex;
 margin-right: 30px;
 
 
-
+    }
 }
 
 }
+
 
 
 .heart {
@@ -573,6 +553,7 @@ footer {
     background-color: #353535;
 
 height: 200px;
+margin-top: 100px;
 
  img {
 padding-top: 20px;
