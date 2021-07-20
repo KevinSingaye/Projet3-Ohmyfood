@@ -27,6 +27,11 @@ strong {
     
     }
 
+body {
+background-color: #f6f6f6;
+
+}
+
 
 .logo {
     
@@ -84,6 +89,11 @@ border-top-left-radius: 30px;
 display: flex;
 flex-direction: row;
 
+h1 {
+
+  margin-left:10px;
+  
+}
 
 .fas {
 
@@ -203,6 +213,8 @@ background-color: #f6f6f6;
 
        h2 { margin-left: 10px;
 
+
+
         p {
 
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -214,6 +226,53 @@ background-color: #f6f6f6;
     }
   }
     
+
+ section h2:after {
+
+    content: "";
+    height: 4px;
+    width: 22%;
+    background: #99E2D0;
+    display: block;
+  }
+
+
+  .note {
+
+    animation-name: topfadein linear 2s;
+    -webkit-animation: topfadeIn linear 2s;
+    -moz-animation: topfadeIn linear 2s;
+    -o-animation: topfadeIn linear 2s;
+    -ms-animation: topfadeIn linear 2s;
+  
+  }
+  
+  @keyframes topfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes topfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes topfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes topfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes topfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+
 
     .repas {
       
@@ -365,31 +424,7 @@ bottom: -15px;
     
         
       
-      @keyframes topfadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-      
-      @-moz-keyframes topfadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-      
-      @-webkit-keyframes topfadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-      
-      @-o-keyframes topfadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-      
-      @-ms-keyframes topfadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-
+  
 
 
 
@@ -614,14 +649,3 @@ position: relative;
 
 
 
-
-.note {
-
-  animation-name: topfadein linear 2s;
-  -webkit-animation: topfadeIn linear 2s;
-  -moz-animation: topfadeIn linear 2s;
-  -o-animation: topfadeIn linear 2s;
-  -ms-animation: topfadeIn linear 2s;
-
-
-}
