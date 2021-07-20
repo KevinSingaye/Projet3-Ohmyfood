@@ -17,6 +17,10 @@ strong {
   right: 20px;
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 .logo {
   text-align: center;
 }
@@ -55,6 +59,9 @@ strong {
 .containera .titrea {
   display: flex;
   flex-direction: row;
+}
+.containera .titrea h1 {
+  margin-left: 10px;
 }
 .containera .titrea .fas {
   display: flex;
@@ -150,6 +157,62 @@ strong {
   text-overflow: ellipsis;
 }
 
+section h2:after {
+  content: "";
+  height: 4px;
+  width: 22%;
+  background: #99E2D0;
+  display: block;
+}
+
+.note {
+  animation-name: topfadein linear 2s;
+  -webkit-animation: topfadeIn linear 2s;
+  -moz-animation: topfadeIn linear 2s;
+  -o-animation: topfadeIn linear 2s;
+  -ms-animation: topfadeIn linear 2s;
+}
+
+@keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .option {
   text-align: center;
 }
@@ -251,46 +314,6 @@ article:hover .icon {
   100% {
     width: 55px;
     right: 10px;
-  }
-}
-@keyframes topfadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes topfadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes topfadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes topfadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-ms-keyframes topfadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 .box_fcta {
@@ -432,14 +455,6 @@ footer section li {
 
 image {
   position: relative;
-}
-
-.note {
-  animation-name: topfadein linear 2s;
-  -webkit-animation: topfadeIn linear 2s;
-  -moz-animation: topfadeIn linear 2s;
-  -o-animation: topfadeIn linear 2s;
-  -ms-animation: topfadeIn linear 2s;
 }
 
 /*# sourceMappingURL=style.css.map */
