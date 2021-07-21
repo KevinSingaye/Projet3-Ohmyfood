@@ -22,10 +22,21 @@ body {
 }
 
 .logo {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  justify-content: center;
 }
 .logo img {
   width: 200px;
+  height: auto;
+}
+
+.logo i {
+  font-size: 25px;
+  color: black;
+  position: absolute;
+  left: 20px;
 }
 
 .pb {
