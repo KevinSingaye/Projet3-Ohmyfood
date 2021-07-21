@@ -396,7 +396,7 @@ article:hover .icon {
 }
 
 .texte {
-  height: 100px;
+  height: 60px;
 }
 .texte h3, .texte p {
   margin-left: 10px;
@@ -408,7 +408,7 @@ article:hover .icon {
 
 .heart {
   position: relative;
-  top: -90px;
+  top: -60px;
   left: -30px;
 }
 
@@ -430,10 +430,10 @@ footer img {
 
 figure {
   display: block;
-  margin-block-start: none;
   margin-block-end: none;
   margin-inline-start: none;
   margin-inline-end: none;
+  margin-block-start: -15px;
 }
 figure figcaption {
   display: inline-block;
