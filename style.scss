@@ -551,7 +551,7 @@ cursor: pointer;
 .texte {
 
     
-height: 100px;
+height: 60px;
 
 h3, p {
 
@@ -572,7 +572,7 @@ margin-right: 30px;
 
 .heart {
     position: relative;
-    top: -90px;
+    top: -60px;
     left: -30px;
 }
 
@@ -604,11 +604,11 @@ padding-top: 20px;
 figure {
 
     display: block;
-    margin-block-start: none;
+   
     margin-block-end: none;
     margin-inline-start: none;
     margin-inline-end: none;
-
+    margin-block-start: -15px;
 
 
 
@@ -643,7 +643,10 @@ image {
 
 position: relative;
 
+
+
 }
+
 
 
 
