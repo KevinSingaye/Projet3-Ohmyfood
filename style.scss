@@ -34,14 +34,23 @@ background-color: #f6f6f6;
 
 
 .logo {
-    
+    display: flex;
+    flex-direction: row;
     text-align:center;
-
+    justify-content:center;
     img {
         width: 200px;
+        height: auto;
     }
+  }
 
-}
+  .logo i {
+
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    left: 20px;
+  }
 
 .pb {
 
