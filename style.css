@@ -381,6 +381,7 @@ article:hover .icon {
 }
 .Resto .container-restaurant article {
   border-radius: 20px;
+  width: 340px;
   margin: 1rem;
   background-color: white;
 }
@@ -414,13 +415,14 @@ article:hover .icon {
 }
 .texte h3 .far, .texte p .far {
   display: flex;
-  margin-right: 30px;
+  position: absolute;
+  right: 20px;
 }
 
-.heart {
+.heart i {
   position: relative;
-  top: -60px;
   left: -30px;
+  top: -30px;
 }
 
 .button2 {
@@ -431,6 +433,7 @@ article:hover .icon {
 footer {
   background-color: #353535;
   height: 200px;
+  width: 400px;
   margin-top: 100px;
 }
 footer img {
@@ -466,6 +469,16 @@ footer section li {
 
 image {
   position: relative;
+}
+
+.img-btn-left {
+  position: absolute;
+  right: 35px;
+  background: #99e2d0;
+  color: #2c9c81;
+  margin-top: 10px;
+  padding: 3px 10px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
