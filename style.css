@@ -482,4 +482,58 @@ image {
   font-weight: bold;
 }
 
+.heart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heart i {
+  position: absolute;
+  right: 20px;
+}
+
+.heart {
+  position: relative;
+}
+
+.heart .fas {
+  opacity: 0;
+  background: linear-gradient(#961d4b, #672faa);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.5s;
+}
+
+.heart:hover .fas {
+  opacity: 1;
+}
+
+.heart2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.heart2 i {
+  position: absolute;
+  right: -100px;
+  margin-top: 5px;
+}
+
+.heart2 {
+  position: relative;
+}
+
+.heart2 .fas {
+  opacity: 0;
+  background: linear-gradient(#961d4b, #672faa);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.5s;
+}
+
+.heart2:hover .fas {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
