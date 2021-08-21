@@ -697,10 +697,10 @@ position: relative;
 
 .heart .fas {
   opacity: 0;
-  background: linear-gradient(#961d4b, #672faa);
+  background: linear-gradient(#f81111, #8a1717);
   -webkit-background-clip: text;
   color: transparent;
-  transition: 0.5s;
+  transition: 1s;
   
   
   
@@ -725,7 +725,7 @@ position: relative;
   position: absolute;
   right: -100px;
   margin-top: 5px;
-  
+  font-size: 25px;
   
 }
 
@@ -737,11 +737,11 @@ position: relative;
 
 .heart2 .fas {
   opacity: 0;
-  background: linear-gradient(#961d4b, #672faa);
+  background: linear-gradient(#f81111, #8a1717);
   -webkit-background-clip: text;
   color: transparent;
-  transition: 0.5s;
-  
+  transition: 1s;
+  font-size: 25px;
   
   
 
@@ -751,5 +751,104 @@ position: relative;
 
 .heart2:hover .fas {
   opacity: 1;
-  
+  font-size: 25px;
+}
+
+
+.spinloader {
+  animation: spinloader 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  background: rgba(10, 10, 10, 0.6);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  z-index: 999;
+}
+.spinloader::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.loader::before {
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #ff79da;
+}
+
+.loader::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #ff79da;
+}
+
+.loader {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border: 4px solid transparent;
+  border-top-color: #ff79da;
+  animation: loader 2s infinite;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 10px;
+}
+.loader::before {
+  content: "";
+  animation: loader 2s infinite;
+}
+.loader::after {
+  content: "";
+  animation: loader 2s infinite;
+}
+.loader__cover {
+  position: relative;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.loader__bar {
+  animation: loader 2s infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+  width: 50%;
+  height: 50%;
+  transform-origin: 100% 100%;
+}
+
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
