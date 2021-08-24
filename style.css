@@ -677,32 +677,90 @@ image {
   }
 }
 @media screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+
   .logo img {
-    width: 35%;
+    width: 50%;
     height: auto;
+  }
+
+  .pic img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+  }
+
+  .containera {
+    background-color: white;
+    width: 100%;
+  }
+
+  .containera article {
+    margin-left: 50px;
+    width: 80%;
+  }
+
+  .pb {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 23px;
+    font-weight: bold;
   }
 
   .reservez {
     display: flex;
     flex-direction: column;
+    margin-top: 3px;
+  }
+
+  .reservez h2 {
+    font-size: 35px;
+  }
+
+  .mybutton {
+    font-size: 25px;
+  }
+
+  .reservez p {
+    font-size: 25px;
+  }
+
+  .containerf {
+    background-color: white;
+  }
+
+  .Resto {
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 20px;
   }
 
   .box_fcta {
     margin-bottom: 10px;
+    font-size: 22px;
+    height: 60px;
   }
 
   .cercle {
     position: absolute;
-    left: 40px;
+    left: 0px;
+    line-height: 1;
+  }
+
+  .containerf h2 {
+    margin-left: 50px;
   }
 
   .restaurants h2 {
-    padding-left: 55px;
+    margin-left: 0px;
     margin-bottom: 10px;
+    margin-block-start: 0px;
   }
 
-  .box_fcta {
-    margin-left: 40px;
+  .box_fct {
+    width: 90%;
   }
 
   .container-restaurant {
@@ -711,12 +769,29 @@ image {
     margin-top: 20px;
   }
 
+  .container-restaurant article {
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+  }
+
+  .texte h3, .texte p {
+    font-size: 16px;
+  }
+
   .img-btn-left {
     margin-right: 150px;
   }
 
+  .button2 {
+    background-color: white;
+  }
+
   footer {
     width: 100%;
+  }
+
+  .heart2 i {
+    position: absolute;
+    right: -400px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -727,6 +802,19 @@ image {
 
   .container-restaurant {
     margin-left: 270px;
+  }
+
+  .containera article {
+    margin-left: 50px;
+    width: 90%;
+  }
+
+  .box_fct {
+    width: 90%;
+  }
+
+  .box_fcta {
+    margin-left: 45px;
   }
 
   .img-btn-left {
