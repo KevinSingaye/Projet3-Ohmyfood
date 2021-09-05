@@ -27,6 +27,7 @@ body {
   text-align: center;
   justify-content: center;
 }
+
 .logo img {
   width: 200px;
   height: auto;
@@ -48,6 +49,7 @@ body {
   font-size: 15px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
 .pb i {
   margin-right: 10px;
 }
@@ -67,13 +69,16 @@ body {
   border-top-right-radius: 30px;
   background-color: #f6f6f6;
 }
+
 .containera .titrea {
   display: flex;
   flex-direction: row;
 }
+
 .containera .titrea h1 {
   margin-left: 10px;
 }
+
 .containera .titrea h1 .fas {
   display: flex;
   font-size: 25px;
@@ -82,6 +87,7 @@ body {
   top: 30px;
   right: 40px;
 }
+
 .containera .titrea h1 .fas .fas:hover {
   color: #bc80ea;
   cursor: pointer;
@@ -140,10 +146,12 @@ body {
   text-shadow: 0px 1px 0px #632e8f;
   margin-bottom: 20px;
 }
+
 .myButton .myButton:hover {
   background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
   background-color: #bc80ea;
 }
+
 .myButton .myButton:hover .myButton:active {
   position: relative;
   top: 1px;
@@ -159,9 +167,11 @@ body {
   flex-direction: column;
   background-color: #f6f6f6;
 }
+
 .containerf h2 {
   margin-left: 10px;
 }
+
 .containerf h2 p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 13px;
@@ -189,42 +199,52 @@ section h2:after {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-moz-keyframes topfadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes topfadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-o-keyframes topfadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-ms-keyframes topfadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .option {
   text-align: center;
 }
@@ -282,21 +302,25 @@ section h2:after {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 article:hover .icon {
   display: flex;
   justify-content: center;
@@ -314,20 +338,24 @@ article:hover .icon {
   from {
     margin-right: 5%;
   }
+
   to {
     margin-left: 0%;
   }
 }
+
 @keyframes tt-expand {
   0% {
     width: 0;
     right: 65px;
   }
+
   100% {
     width: 55px;
     right: 10px;
   }
 }
+
 .box_fcta {
   display: flex;
   flex-direction: row;
@@ -376,16 +404,19 @@ article:hover .icon {
   padding-top: 10px;
   margin-top: 20px;
 }
+
 .Resto .container-restaurant {
   display: flex;
   flex-wrap: wrap;
 }
+
 .Resto .container-restaurant article {
   border-radius: 20px;
   width: 340px;
   margin: 1rem;
   background-color: white;
 }
+
 .Resto .container-restaurant article img {
   width: 100%;
   height: 160px;
@@ -397,13 +428,15 @@ article:hover .icon {
   margin-left: 5px;
 }
 
-.far, .fa-heart {
+.far,
+.fa-heart {
   display: flex;
   justify-content: flex-end;
   font-size: 25px;
 }
 
-.far:hover, .fa-heart:hover {
+.far:hover,
+.fa-heart:hover {
   color: #bc80ea;
   cursor: pointer;
 }
@@ -411,10 +444,14 @@ article:hover .icon {
 .texte {
   height: 60px;
 }
-.texte h3, .texte p {
+
+.texte h3,
+.texte p {
   margin-left: 10px;
 }
-.texte h3 .far, .texte p .far {
+
+.texte h3 .far,
+.texte p .far {
   display: flex;
   position: absolute;
   right: 20px;
@@ -437,6 +474,7 @@ footer {
   width: 400px;
   margin-top: 20px;
 }
+
 footer img {
   padding-top: 20px;
   width: 100px;
@@ -450,6 +488,7 @@ figure {
   margin-inline-end: none;
   margin-block-start: -15px;
 }
+
 figure figcaption {
   display: inline-block;
   color: #008766;
@@ -633,32 +672,40 @@ image {
     z-index: -10;
   }
 }
+
 @keyframes loader {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(-360deg);
   }
 }
+
 @media screen and (max-width: 280px) {
   .logo_fct {
     position: relative;
     right: -1px;
   }
 }
+
 @media screen and (min-width: 320px) {
-  .logo_fct .fa, .fas {
+
+  .logo_fct .fa,
+  .fas {
     position: relative;
     left: -15px;
   }
 }
+
 @media screen and (min-width: 410px) {
   .img-btn-left {
     position: absolute;
     right: 70px;
   }
 }
+
 @media screen and (min-width: 540px) {
   .reservez {
     display: flex;
@@ -682,6 +729,7 @@ image {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 768px) {
   body {
     background-color: white;
@@ -779,7 +827,8 @@ image {
     box-shadow: 0 5px 15px 0 #c3c3c3;
   }
 
-  .texte h3, .texte p {
+  .texte h3,
+  .texte p {
     font-size: 16px;
   }
 
@@ -800,6 +849,7 @@ image {
     right: -400px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   body {
     background-color: white;
