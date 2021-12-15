@@ -1,3 +1,5 @@
+$white:#ffffff;
+$lightgrey:#f6f6f6;
 p {
     font-size: 0.875rem;
     font-weight: 300;
@@ -18,10 +20,10 @@ strong {
 }
 
 body {
-    background-color: #f6f6f6;
+    background-color: $lightgrey;
 }
 
-.logo {
+.header__heading {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -32,14 +34,14 @@ body {
     }
 }
 
-.logo i {
+.header__heading i {
     font-size: 25px;
     color: black;
     position: absolute;
     left: 20px;
 }
 
-.pb {
+.header__location {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -52,7 +54,7 @@ body {
     }
 }
 
-.pic {
+.header__classpic {
     img {
         width: 400px;
         height: 291px;
@@ -60,19 +62,19 @@ body {
     }
 }
 
-.containera {
+.menu {
     position: relative;
     top: -50px;
     width: 400px;
     height: 1200px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background-color: #f6f6f6;
-    .titrea {
+    background-color: $lightgrey;
+    &__heading {
         display: flex;
         flex-direction: row;
         h1 {
-            margin-left: 10px;
+            margin-left: 20px;
             .fas {
                 display: flex;
                 font-size: 25px;
@@ -80,94 +82,183 @@ body {
                 position: absolute;
                 top: 30px;
                 right: 40px;
-                .fas:hover {
+                &__.fas:hover {
                     color: #bc80ea;
                     cursor: pointer;
                 }
             }
         }
     }
+    &__heading i {
+        position: absolute;
+        top: 30px;
+        right: 60px;
+    }
+    & p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    & article {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        width: 100%;
+        margin: 1rem 0;
+        background-color: $white;
+        box-shadow: 0 0 14px #c3c3c3;
+    }
 }
 
-.titrea i {
-    position: absolute;
-    top: 30px;
-    right: 60px;
-}
-
-.containera article {
+.booking {
     display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-    width: 100%;
-    margin: 1rem 0;
-    background-color: white;
-    box-shadow: 0 0 14px #c3c3c3;
-}
-
-.containera p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.reservez {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: justify;
-    text-align-last: center;
-    margin: auto;
     padding-top: 10px;
     padding-bottom: 20px;
-    background-color: #f6f6f6;
+    background-color: $lightgrey;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    h2 {
+        width: 250px;
+        text-align: center;
+    }
+    &__button {
+        box-shadow: inset 0px 0px 0px 0px #efdcfb;
+        background: linear-gradient(to bottom, #ba1e96 5%, #bc80ea 100%);
+        background-color: #ba1e96;
+        border-radius: 22px;
+        border: 1px solid #c584f3;
+        display: inline-block;
+        cursor: pointer;
+        color: $white;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 12px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #632e8f;
+        &--:active {
+            position: relative;
+            top: 1px;
+        }
+        &--:hover {
+            background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
+            background-color: #bc80ea;
+        }
+    }
 }
 
-.myButton {
+.menu__button {
     box-shadow: inset 0px 0px 0px 0px #efdcfb;
     background: linear-gradient(to bottom, #ba1e96 5%, #bc80ea 100%);
-    background-color: #ba1e96;
     border-radius: 22px;
     border: 1px solid #c584f3;
-    display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: $white;
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;
     padding: 12px 24px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #632e8f;
+    background-color: $lightgrey;
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
     margin-bottom: 20px;
-    .myButton:hover {
+    margin-top: 40px;
+    width: 40%;
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+    &:hover {
         background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
         background-color: #bc80ea;
-        .myButton:active {
-            position: relative;
-            top: 1px;
-        }
     }
 }
 
-.button2 {
-    background-color: #f6f6f6;
-}
-
-.containerf {
+.steps {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-color: $white;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    &__box {
+        margin-left: 15px;
+    }
+    &__fcta {
+        display: flex;
+        flex-direction: row;
+        background-color: #F2F2F2;
+        border-radius: 25px;
+        color: black;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 0 5px 15px 0 #c3c3c3;
+        font-weight: bold;
+        border: #c3c3c3;
+        height: 40px;
+        width: 80%;
+    }
+    &__option {
+        text-align: center;
+    }
+    &__cercle {
+        position: absolute;
+        left: 25px;
+        background: #9356dc;
+        border-radius: 100%;
+        color: $white;
+        height: 25px;
+        width: 10px;
+        line-height: 1.67;
+        padding: 2px 10px;
+        font-weight: bold;
+    }
+    &__logo {
+        display: flex;
+        justify-content: left;
+        position: relative;
+        right: -35px;
+        bottom: -15px;
+    }
+    p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     h2 {
         margin-left: 10px;
-        p {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 13px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+    }
+}
+
+.menu-choice {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: $lightgrey;
+    p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    h2 {
+        margin-left: 10px;
+    }
+    article {
+        margin-left: 5px;
+        ;
+        width: 95%;
     }
 }
 
@@ -232,12 +323,6 @@ section h2:after {
     }
 }
 
-.repas {}
-
-.option {
-    text-align: center;
-}
-
 .option2 {
     position: relative;
     top: -10px;
@@ -245,30 +330,9 @@ section h2:after {
     font-size: 0.875rem;
 }
 
-.logo_fct {
-    display: flex;
-    justify-content: left;
-    position: relative;
-    right: -35px;
-    bottom: -15px;
-}
-
-.cercle {
-    position: absolute;
-    left: 0px;
-    background: #9356dc;
-    border-radius: 100%;
-    color: #fff;
-    height: 25px;
-    width: 10px;
-    line-height: 1.67;
-    padding: 2px 10px;
-    font-weight: bold;
-}
-
 .icon {
     display: none;
-    color: white;
+    color: $white;
 }
 
 .icon i {
@@ -341,25 +405,6 @@ article:hover .icon {
     }
 }
 
-.box_fcta {
-    display: flex;
-    flex-direction: row;
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    color: black;
-    padding: 15px 32px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px 0 #c3c3c3;
-    font-weight: bold;
-    border: #c3c3c3;
-    height: 40px;
-    width: 80%;
-}
-
 .box_fct {
     display: flex;
     flex-direction: row;
@@ -384,18 +429,17 @@ article:hover .icon {
     border-bottom-right-radius: 0px;
 }
 
-.Resto {
-    background-color: #F6F6F6;
-    padding-top: 10px;
-    margin-top: 20px;
-    .container-restaurant {
+.restaurant-choice {
+    padding-top: 5px;
+    background-color: $lightgrey;
+    &__cards {
         display: flex;
         flex-wrap: wrap;
         article {
             border-radius: 20px;
             width: 340px;
             margin: 1rem;
-            background-color: white;
+            background-color: $white;
             img {
                 width: 100%;
                 height: 160px;
@@ -406,7 +450,7 @@ article:hover .icon {
     }
 }
 
-.restaurants h2 {
+.restaurant-choice h2 {
     margin-left: 5px;
 }
 
@@ -451,7 +495,6 @@ footer {
     background-color: #353535;
     height: 200px;
     width: 400px;
-    margin-top: 20px;
     img {
         padding-top: 20px;
         width: 100px;
@@ -477,7 +520,7 @@ figure {
 
 footer li a {
     text-decoration: none;
-    color: white;
+    color: $white;
 }
 
 footer section li {
@@ -682,7 +725,7 @@ image {
 }
 
 @media screen and (min-width: 540px) {
-    .reservez {
+    .booking {
         display: flex;
         flex-direction: column;
     }
@@ -703,22 +746,22 @@ image {
 
 @media screen and (min-width: 768px) {
     body {
-        background-color: white;
+        background-color: $white;
     }
-    .logo img {
+    .header__heading img {
         width: 50%;
         height: auto;
     }
-    .pic img {
+    .header__img {
         width: 100%;
         height: 290px;
         object-fit: cover;
     }
-    .containera {
-        background-color: white;
+    .menu {
+        background-color: $white;
         width: 100%;
     }
-    .containera article {
+    .menu article {
         margin-left: 50px;
         width: 80%;
     }
@@ -728,25 +771,25 @@ image {
         font-size: 23px;
         font-weight: bold;
     }
-    .reservez {
+    .booking {
         display: flex;
         flex-direction: column;
         margin-top: 3px;
     }
-    .reservez h2 {
+    .booking h2 {
         font-size: 35px;
     }
     .mybutton {
         font-size: 25px;
     }
-    .reservez p {
+    .booking p {
         font-size: 25px;
     }
-    .containerf {
-        background-color: white;
+    .steps {
+        background-color: $white;
     }
     .Resto {
-        background-color: white;
+        background-color: $white;
         margin-top: 0px;
         padding-top: 20px;
     }
@@ -760,7 +803,7 @@ image {
         left: 0px;
         line-height: 1;
     }
-    .containerf h2 {
+    .steps h2 {
         margin-left: 50px;
     }
     .restaurants h2 {
@@ -787,7 +830,7 @@ image {
         margin-right: 150px;
     }
     .button2 {
-        background-color: white;
+        background-color: $white;
     }
     footer {
         width: 100%;
@@ -800,7 +843,7 @@ image {
 
 @media screen and (min-width: 1024px) {
     body {
-        background-color: white;
+        background-color: $white;
     }
     .heart2 i {
         font-size: 40px;
@@ -824,10 +867,10 @@ image {
     }
     .containera {
         height: 1000px;
-        background-color: white;
+        background-color: $white;
     }
-    .containerf {
-        background-color: white;
+    .restaurant-choice {
+        background-color: $white;
         margin-left: 30px;
     }
     .cercle {
@@ -852,10 +895,10 @@ image {
         margin-right: 310px;
     }
     .button2 {
-        background-color: white;
+        background-color: $white;
     }
     .myButton {
-        background-color: white;
+        background-color: $white;
     }
     footer {
         margin-top: 30px;
