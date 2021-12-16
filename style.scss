@@ -98,6 +98,26 @@ body {
         top: 30px;
         right: 60px;
     }
+    &__choice {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: $lightgrey;
+        p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 13px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        h2 {
+            margin-left: 10px;
+        }
+        article {
+            margin-left: 5px;
+            ;
+            width: 95%;
+        }
+    }
     & p {
         white-space: nowrap;
         overflow: hidden;
@@ -107,10 +127,76 @@ body {
         display: flex;
         justify-content: space-between;
         border-radius: 20px;
-        width: 100%;
-        margin: 1rem 0;
+        width: 95%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 5px;
         background-color: $white;
-        box-shadow: 0 0 14px #c3c3c3;
+        box-shadow: 0 0 2px #c3c3c3;
+    }
+    &__note {
+        animation-name: topfadein linear 2s;
+        -webkit-animation: topfadeIn linear 2s;
+        -moz-animation: topfadeIn linear 2s;
+        -o-animation: topfadeIn linear 2s;
+        -ms-animation: topfadeIn linear 2s;
+    }
+    &__fct {
+        display: flex;
+        flex-direction: row;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        color: black;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 5px 15px 0 #c3c3c3;
+        font-weight: bold;
+        border: #c3c3c3;
+        height: 45px;
+        width: 90%;
+    }
+    &__fct:hover {
+        background-color: #f5edff;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    &__option {
+        position: relative;
+        top: -10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.875rem;
+    }
+    &__button {
+        box-shadow: inset 0px 0px 0px 0px #efdcfb;
+        background: linear-gradient(to bottom, #ba1e96 5%, #bc80ea 100%);
+        border-radius: 22px;
+        border: 1px solid #c584f3;
+        cursor: pointer;
+        color: $white;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 12px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #632e8f;
+        background-color: $lightgrey;
+        display: flex;
+        justify-content: center;
+        margin-left: 90px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        width: 40%;
+    }
+    &__button:active {
+        position: relative;
+        top: 1px;
+    }
+    &__button:hover {
+        background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
+        background-color: #bc80ea;
     }
 }
 
@@ -144,42 +230,12 @@ body {
         text-shadow: 0px 1px 0px #632e8f;
         margin-top: 20px;
         margin-bottom: 20px;
-        &--button:active {
-            position: relative;
-            top: 1px;
-        }
-        &--button:hover {
-            background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
-            background-color: #bc80ea;
-        }
     }
-}
-
-.menu__button {
-    box-shadow: inset 0px 0px 0px 0px #efdcfb;
-    background: linear-gradient(to bottom, #ba1e96 5%, #bc80ea 100%);
-    border-radius: 22px;
-    border: 1px solid #c584f3;
-    cursor: pointer;
-    color: $white;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 12px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #632e8f;
-    background-color: $lightgrey;
-    display: flex;
-    justify-content: center;
-    margin-left: 90px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    width: 40%;
-    &:active {
+    &__button:active {
         position: relative;
         top: 1px;
     }
-    &:hover {
+    &__button:hover {
         background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
         background-color: #bc80ea;
     }
@@ -247,41 +303,12 @@ body {
     }
 }
 
-.menu-choice {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: $lightgrey;
-    p {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 13px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    h2 {
-        margin-left: 10px;
-    }
-    article {
-        margin-left: 5px;
-        ;
-        width: 95%;
-    }
-}
-
 section h2:after {
     content: "";
     height: 4px;
     width: 22%;
     background: #99E2D0;
     display: block;
-}
-
-.note {
-    animation-name: topfadein linear 2s;
-    -webkit-animation: topfadeIn linear 2s;
-    -moz-animation: topfadeIn linear 2s;
-    -o-animation: topfadeIn linear 2s;
-    -ms-animation: topfadeIn linear 2s;
 }
 
 @keyframes topfadeIn {
@@ -327,13 +354,6 @@ section h2:after {
     100% {
         opacity: 1;
     }
-}
-
-.option2 {
-    position: relative;
-    top: -10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.875rem;
 }
 
 .icon {
@@ -411,34 +431,13 @@ article:hover .icon {
     }
 }
 
-.box_fct {
-    display: flex;
-    flex-direction: row;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    color: black;
-    padding: 15px 32px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px 0 #c3c3c3;
-    font-weight: bold;
-    border: #c3c3c3;
-    height: 45px;
-    width: 90%;
-}
-
-.box_fct:hover {
-    background-color: #f5edff;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
 .restaurant-choice {
     padding-top: 5px;
     padding-bottom: 40px;
     background-color: $lightgrey;
+    & h2 {
+        margin-left: 15px;
+    }
     &__cards {
         display: flex;
         flex-wrap: wrap;
@@ -455,10 +454,50 @@ article:hover .icon {
             }
         }
     }
-}
-
-.restaurant-choice h2 {
-    margin-left: 5px;
+    &__texte {
+        height: 60px;
+        h3,
+        p {
+            margin-left: 10px;
+            .far {
+                display: flex;
+                position: absolute;
+                right: 20px;
+            }
+        }
+    }
+    &__img-btn-left {
+        position: absolute;
+        right: 70px;
+        background: #99e2d0;
+        color: #2c9c81;
+        margin-top: 10px;
+        padding: 3px 10px;
+        font-weight: bold;
+    }
+    &__heart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    &__heart .fas {
+        opacity: 0;
+        background: linear-gradient(#f81111, #8a1717);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: 1s;
+    }
+    &__heart:hover .fas {
+        opacity: 1;
+    }
+    &__heart i {
+        position: relative;
+        left: -30px;
+        top: -30px;
+        position: absolute;
+        right: 20px;
+    }
 }
 
 .far,
@@ -472,25 +511,6 @@ article:hover .icon {
 .fa-heart:hover {
     color: #bc80ea;
     cursor: pointer;
-}
-
-.texte {
-    height: 60px;
-    h3,
-    p {
-        margin-left: 10px;
-        .far {
-            display: flex;
-            position: absolute;
-            right: 20px;
-        }
-    }
-}
-
-.heart i {
-    position: relative;
-    left: -30px;
-    top: -30px;
 }
 
 footer {
@@ -532,47 +552,6 @@ footer section li {
 
 .footerindex {
     margin-top: 0px;
-}
-
-image {
-    position: relative;
-}
-
-.img-btn-left {
-    position: absolute;
-    right: 35px;
-    background: #99e2d0;
-    color: #2c9c81;
-    margin-top: 10px;
-    padding: 3px 10px;
-    font-weight: bold;
-}
-
-.heart {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.heart i {
-    position: absolute;
-    right: 20px;
-}
-
-.heart {
-    position: relative;
-}
-
-.heart .fas {
-    opacity: 0;
-    background: linear-gradient(#f81111, #8a1717);
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: 1s;
-}
-
-.heart:hover .fas {
-    opacity: 1;
 }
 
 .heart2 {
