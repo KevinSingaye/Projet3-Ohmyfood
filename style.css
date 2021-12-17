@@ -146,7 +146,7 @@ body {
 
 .menu__choice article {
   margin-left: 5px;
-  width: 95%;
+  width: 90%;
 }
 
 .menu p {
@@ -218,6 +218,55 @@ body {
   font-size: 0.875rem;
 }
 
+.menu__icon {
+  display: none;
+  color: #ffffff;
+}
+
+.menu__icon i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+.menu__icon i:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+.menu article:hover .menu__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #99E2D0;
+  border-radius: 1px 20px 20px 1px;
+  animation-direction: reverse;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: glissement;
+          animation-name: glissement;
+  opacity: 1;
+  -webkit-animation: tt-expand 1.5s ease both;
+          animation: tt-expand 1.5s ease both;
+}
+
 .menu__button {
   -webkit-box-shadow: inset 0px 0px 0px 0px #efdcfb;
           box-shadow: inset 0px 0px 0px 0px #efdcfb;
@@ -255,6 +304,79 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #bc80ea), to(#ba1e96));
   background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
   background-color: #bc80ea;
+}
+
+@-webkit-keyframes menu__icon {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes glissement {
+  from {
+    margin-right: 5%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes glissement {
+  from {
+    margin-right: 5%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@-webkit-keyframes tt-expand {
+  0% {
+    width: 0;
+    right: 65px;
+  }
+  100% {
+    width: 55px;
+    right: 10px;
+  }
+}
+
+@keyframes tt-expand {
+  0% {
+    width: 0;
+    right: 65px;
+  }
+  100% {
+    width: 55px;
+    right: 10px;
+  }
 }
 
 .booking {
@@ -425,128 +547,6 @@ section h2:after {
   }
 }
 
-.icon {
-  display: none;
-  color: #ffffff;
-}
-
-.icon i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
-  animation: rotate-center 0.6s ease-in-out both;
-}
-
-.icon i:hover {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
-  animation: rotate-center 0.6s ease-in-out both;
-}
-
-@-webkit-keyframes icon {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-article:hover .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background-color: #99E2D0;
-  border-radius: 1px 20px 20px 1px;
-  animation-direction: reverse;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: glissement;
-          animation-name: glissement;
-  opacity: 1;
-  -webkit-animation: tt-expand 1.5s ease both;
-          animation: tt-expand 1.5s ease both;
-}
-
-@-webkit-keyframes glissement {
-  from {
-    margin-right: 5%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-
-@keyframes glissement {
-  from {
-    margin-right: 5%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-
-@-webkit-keyframes tt-expand {
-  0% {
-    width: 0;
-    right: 65px;
-  }
-  100% {
-    width: 55px;
-    right: 10px;
-  }
-}
-
-@keyframes tt-expand {
-  0% {
-    width: 0;
-    right: 65px;
-  }
-  100% {
-    width: 55px;
-    right: 10px;
-  }
-}
-
 .restaurant-choice {
   padding-top: 5px;
   padding-bottom: 40px;
@@ -672,27 +672,6 @@ footer img {
   padding-top: 20px;
   width: 100px;
   padding-left: 20px;
-}
-
-figure {
-  display: block;
-  -webkit-margin-after: none;
-          margin-block-end: none;
-  -webkit-margin-start: none;
-          margin-inline-start: none;
-  -webkit-margin-end: none;
-          margin-inline-end: none;
-  -webkit-margin-before: -15px;
-          margin-block-start: -15px;
-}
-
-figure figcaption {
-  display: inline-block;
-  color: #008766;
-  background-color: #99e2d0;
-  position: absolute;
-  left: 300px;
-  padding: 5px;
 }
 
 footer li a {

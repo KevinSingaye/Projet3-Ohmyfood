@@ -115,7 +115,7 @@ body {
         article {
             margin-left: 5px;
             ;
-            width: 95%;
+            width: 90%;
         }
     }
     & p {
@@ -169,6 +169,35 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 0.875rem;
     }
+    &__icon {
+        display: none;
+        color: $white;
+    }
+    &__icon i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-animation: rotate-center 0.6s ease-in-out both;
+        animation: rotate-center 0.6s ease-in-out both;
+    }
+    &__icon i:hover {
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        -webkit-animation: rotate-center 0.6s ease-in-out both;
+        animation: rotate-center 0.6s ease-in-out both;
+    }
+    article:hover .menu__icon {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: #99E2D0;
+        border-radius: 1px 20px 20px 1px;
+        animation-direction: reverse;
+        animation-duration: 2s;
+        animation-name: glissement;
+        opacity: 1;
+        animation: tt-expand 1.5s ease both;
+    }
     &__button {
         box-shadow: inset 0px 0px 0px 0px #efdcfb;
         background: linear-gradient(to bottom, #ba1e96 5%, #bc80ea 100%);
@@ -197,6 +226,48 @@ body {
     &__button:hover {
         background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
         background-color: #bc80ea;
+    }
+}
+
+@-webkit-keyframes menu__icon {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glissement {
+    from {
+        margin-right: 5%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes tt-expand {
+    0% {
+        width: 0;
+        right: 65px;
+    }
+    100% {
+        width: 55px;
+        right: 10px;
     }
 }
 
@@ -356,81 +427,6 @@ section h2:after {
     }
 }
 
-.icon {
-    display: none;
-    color: $white;
-}
-
-.icon i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-
-.icon i:hover {
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-    animation: rotate-center 0.6s ease-in-out both;
-}
-
-@-webkit-keyframes icon {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-center {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-article:hover .icon {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #99E2D0;
-    border-radius: 1px 20px 20px 1px;
-    animation-direction: reverse;
-    animation-duration: 2s;
-    animation-name: glissement;
-    opacity: 1;
-    animation: tt-expand 1.5s ease both;
-}
-
-@keyframes glissement {
-    from {
-        margin-right: 5%;
-    }
-    to {
-        margin-left: 0%;
-    }
-}
-
-@keyframes tt-expand {
-    0% {
-        width: 0;
-        right: 65px;
-    }
-    100% {
-        width: 55px;
-        right: 10px;
-    }
-}
-
 .restaurant-choice {
     padding-top: 5px;
     padding-bottom: 40px;
@@ -522,22 +518,6 @@ footer {
         padding-top: 20px;
         width: 100px;
         padding-left: 20px;
-    }
-}
-
-figure {
-    display: block;
-    margin-block-end: none;
-    margin-inline-start: none;
-    margin-inline-end: none;
-    margin-block-start: -15px;
-    figcaption {
-        display: inline-block;
-        color: #008766;
-        background-color: #99e2d0;
-        position: absolute;
-        left: 300px;
-        padding: 5px;
     }
 }
 
