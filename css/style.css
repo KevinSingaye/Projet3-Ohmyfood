@@ -1,10 +1,36 @@
+html {
+  font-family: 'Roboto';
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Black.ttf");
+  src: url("Roboto-BlackItalic.ttf");
+  src: url("Roboto-Bold.ttf");
+  src: url("Roboto-BoldCondensed.ttf");
+  src: url("Roboto-BoldCondensedItalic.ttf");
+  src: url("Roboto-BoldItalic.ttf");
+  src: url("Roboto-Condensed.ttf");
+  src: url("Roboto-CondensedItalic.ttf");
+  src: url("Roboto-Italic.ttf");
+  src: url("Roboto-Light.ttf");
+  src: url("Roboto-LightItalic.ttf");
+  src: url("Roboto-Medium.ttf");
+  src: url("Roboto-MediumItalic.ttf");
+  src: url("Roboto-Regular.ttf");
+  src: url("Roboto-Thin.ttf");
+  src: url("Roboto-ThinItalic.ttf");
+  src: url("Shrikhand-Regular.ttf");
+}
+
 p {
   font-size: 0.875rem;
   font-weight: 300;
 }
 
 h1 {
-  font-family: Forte;
+  font-family: 'Shrikhand';
+  font-size: 27px;
 }
 
 h3 {
@@ -134,7 +160,7 @@ body {
 }
 
 .menu__choice p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Roboto';
   font-size: 13px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -142,6 +168,7 @@ body {
 
 .menu__choice h2 {
   margin-left: 10px;
+  font-weight: 100;
 }
 
 .menu__choice article {
@@ -170,15 +197,6 @@ body {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 2px #c3c3c3;
           box-shadow: 0 0 2px #c3c3c3;
-}
-
-.menu__note {
-  -webkit-animation-name: topfadein linear 2s;
-          animation-name: topfadein linear 2s;
-  -webkit-animation: topfadeIn linear 2s;
-  -moz-animation: topfadeIn linear 2s;
-  -o-animation: topfadeIn linear 2s;
-  -ms-animation: topfadeIn linear 2s;
 }
 
 .menu__fct {
@@ -214,7 +232,7 @@ body {
 .menu__option {
   position: relative;
   top: -10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto';
   font-size: 0.875rem;
 }
 
@@ -396,7 +414,7 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
   background-color: #f6f6f6;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Roboto';
 }
 
 .booking h2 {
@@ -511,7 +529,7 @@ body {
 }
 
 .steps p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Roboto';
   font-size: 13px;
   overflow: hidden;
   text-overflow: ellipsis;
