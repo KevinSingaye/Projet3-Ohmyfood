@@ -505,7 +505,7 @@ body {
 
 .steps__cercle {
   position: absolute;
-  left: 25px;
+  left: 30px;
   background: #9356dc;
   border-radius: 100%;
   color: #ffffff;
@@ -524,8 +524,8 @@ body {
       -ms-flex-pack: left;
           justify-content: left;
   position: relative;
-  right: -35px;
-  bottom: -15px;
+  right: -10px;
+  bottom: -16px;
 }
 
 .steps p {
@@ -697,49 +697,28 @@ footer li a {
   color: #ffffff;
 }
 
+footer li i {
+  margin-right: 10px;
+}
+
+footer li:nth-child(2) {
+  position: relative;
+  left: -5px;
+}
+
 footer section li {
   list-style-type: none;
 }
 
+footer section ul {
+  margin-left: 20px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  line-height: 1.6;
+}
+
 .footerindex {
   margin-top: 0px;
-}
-
-.heart2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.heart2 i {
-  position: absolute;
-  right: -100px;
-  margin-top: 5px;
-  font-size: 25px;
-}
-
-.heart2 {
-  position: relative;
-}
-
-.heart2 .fas {
-  opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f81111), to(#8a1717));
-  background: linear-gradient(#f81111, #8a1717);
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-transition: 1s;
-  transition: 1s;
-  font-size: 25px;
-}
-
-.heart2:hover .fas {
-  opacity: 1;
-  font-size: 25px;
 }
 
 .spinloader {
@@ -874,228 +853,15 @@ footer section li {
   }
 }
 
-@media screen and (max-width: 280px) {
-  .logo_fct {
+@media screen and (max-width: 375px) {
+  .restaurant-choice__img-btn-left {
+    position: absolute;
+    right: 50px;
+  }
+  .steps__logo {
     position: relative;
-    right: -1px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .logo_fct .fa,
-  .fas {
-    position: relative;
-    left: -15px;
-  }
-}
-
-@media screen and (min-width: 410px) {
-  .img-btn-left {
-    position: absolute;
-    right: 70px;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .booking {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .cercle {
-    position: absolute;
-    left: 0px;
-  }
-  .img-btn-left {
-    margin-right: 60px;
-  }
-  .restaurants {
-    margin-left: 60px;
-  }
-  footer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    background-color: #ffffff;
-  }
-  .header__heading img {
-    width: 50%;
-    height: auto;
-  }
-  .header__img {
-    width: 100%;
-    height: 290px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .menu {
-    background-color: #ffffff;
-    width: 100%;
-  }
-  .menu article {
-    margin-left: 50px;
-    width: 80%;
-  }
-  .pb {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: 23px;
-    font-weight: bold;
-  }
-  .booking {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 3px;
-  }
-  .booking h2 {
-    font-size: 35px;
-  }
-  .mybutton {
-    font-size: 25px;
-  }
-  .booking p {
-    font-size: 25px;
-  }
-  .steps {
-    background-color: #ffffff;
-  }
-  .Resto {
-    background-color: #ffffff;
-    margin-top: 0px;
-    padding-top: 20px;
-  }
-  .box_fcta {
-    margin-bottom: 10px;
-    font-size: 22px;
-    height: 60px;
-  }
-  .cercle {
-    position: absolute;
-    left: 0px;
-    line-height: 1;
-  }
-  .steps h2 {
-    margin-left: 50px;
-  }
-  .restaurants h2 {
-    margin-left: 0px;
-    margin-bottom: 10px;
-    -webkit-margin-before: 0px;
-            margin-block-start: 0px;
-  }
-  .box_fct {
-    width: 90%;
-  }
-  .container-restaurant {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 130px;
-    margin-top: 20px;
-  }
-  .container-restaurant article {
-    -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
-            box-shadow: 0 5px 15px 0 #c3c3c3;
-  }
-  .texte h3,
-  .texte p {
-    font-size: 16px;
-  }
-  .img-btn-left {
-    margin-right: 150px;
-  }
-  .button2 {
-    background-color: #ffffff;
-  }
-  footer {
-    width: 100%;
-  }
-  .heart2 i {
-    position: absolute;
-    right: -400px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    background-color: #ffffff;
-  }
-  .heart2 i {
-    font-size: 40px;
-    padding-top: 10px;
-    position: absolute;
-    right: -500px;
-  }
-  .heart2:hover .fas {
-    font-size: 40px;
-  }
-  .containera .titrea h1 {
-    margin-left: 25px;
-  }
-  h1 {
-    display: block;
-    font-size: 45px;
-  }
-  .note {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .containera {
-    height: 1000px;
-    background-color: #ffffff;
-  }
-  .restaurant-choice {
-    background-color: #ffffff;
-    margin-left: 30px;
-  }
-  .cercle {
-    position: absolute;
-    left: 20px;
-  }
-  section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    justify-items: center;
-    padding: 0px;
-    width: 100%;
-    z-index: 1;
-  }
-  .containera article {
-    width: 42%;
-  }
-  .container-restaurant {
-    margin-left: 240px;
-  }
-  .img-btn-left {
-    margin-right: 310px;
-  }
-  .button2 {
-    background-color: #ffffff;
-  }
-  .myButton {
-    background-color: #ffffff;
-  }
-  footer {
-    margin-top: 30px;
+    left: -5px;
+    bottom: -16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
