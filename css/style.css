@@ -199,6 +199,88 @@ body {
           box-shadow: 0 0 2px #c3c3c3;
 }
 
+.menu__note {
+  -webkit-animation-name: topfadein linear 1s;
+          animation-name: topfadein linear 1s;
+  -webkit-animation: topfadeIn linear 1s;
+  -moz-animation: topfadeIn linear 1s;
+  -o-animation: topfadeIn linear 1s;
+  -ms-animation: topfadeIn linear 1s;
+}
+
+.menu__note2 {
+  -webkit-animation-name: topfadein linear 3s;
+          animation-name: topfadein linear 3s;
+  -webkit-animation: topfadeIn linear 3s;
+  -moz-animation: topfadeIn linear 3s;
+  -o-animation: topfadeIn linear 3s;
+  -ms-animation: topfadeIn linear 3s;
+}
+
+.menu__note3 {
+  -webkit-animation-name: topfadein linear 5s;
+          animation-name: topfadein linear 5s;
+  -webkit-animation: topfadeIn linear 5s;
+  -moz-animation: topfadeIn linear 5s;
+  -o-animation: topfadeIn linear 5s;
+  -ms-animation: topfadeIn linear 5s;
+}
+
+.menu .menu__note .repas {
+  -webkit-animation: slideTop 2000ms, opacite 1000ms;
+          animation: slideTop 2000ms, opacite 1000ms;
+}
+
+.menu .menu__note2 .repas {
+  -webkit-animation: slideTop 1500ms, opacite 1000ms;
+          animation: slideTop 1500ms, opacite 1000ms;
+}
+
+.menu .menu__note3 .repas {
+  -webkit-animation: slideTop 1000ms, opacite 1000ms;
+          animation: slideTop 1000ms, opacite 1000ms;
+}
+
+@-webkit-keyframes slideTop {
+  from {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideTop {
+  from {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes opacite {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacite {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .menu__fct {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,6 +476,24 @@ body {
   100% {
     width: 55px;
     right: 10px;
+  }
+}
+
+@keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes topfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
