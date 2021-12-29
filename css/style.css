@@ -173,7 +173,7 @@ body {
 
 .menu__choice article {
   margin-left: 5px;
-  width: 90%;
+  width: 95%;
 }
 
 .menu p {
@@ -296,19 +296,12 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  cursor: pointer;
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
   font-weight: bold;
   border: #c3c3c3;
   height: 45px;
   width: 90%;
-}
-
-.menu__fct:hover {
-  background-color: #f5edff;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 
 .menu__option {
@@ -333,23 +326,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
-  animation: rotate-center 0.6s ease-in-out both;
+  font-size: 25px;
 }
 
-.menu__icon i:hover {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
-  animation: rotate-center 0.6s ease-in-out both;
-}
-
-.menu article:hover .menu__icon {
+.menu article:active .menu__icon i {
+  -webkit-animation: rotate-center 0.6s ease;
+  animation: rotate-center 0.6s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu article:active .menu__icon {
+  -webkit-animation: glissement 300ms;
+  animation: glissement 300ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu article .menu__icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -357,14 +353,6 @@ body {
       align-content: center;
   background-color: #99E2D0;
   border-radius: 1px 20px 20px 1px;
-  animation-direction: reverse;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: glissement;
-          animation-name: glissement;
-  opacity: 1;
-  -webkit-animation: tt-expand 1.5s ease both;
-          animation: tt-expand 1.5s ease both;
 }
 
 .menu__button {
@@ -374,7 +362,6 @@ body {
   background: linear-gradient(to bottom, #ba1e96 5%, #bc80ea 100%);
   border-radius: 22px;
   border: 1px solid #c584f3;
-  cursor: pointer;
   color: #ffffff;
   font-family: Arial;
   font-size: 15px;
@@ -396,14 +383,11 @@ body {
 }
 
 .menu__button:active {
-  position: relative;
-  top: 1px;
-}
-
-.menu__button:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #bc80ea), to(#ba1e96));
   background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
   background-color: #bc80ea;
+  position: relative;
+  top: 1px;
 }
 
 @-webkit-keyframes menu__icon {
@@ -441,41 +425,23 @@ body {
 
 @-webkit-keyframes glissement {
   from {
-    margin-right: 5%;
+    width: 0px;
+    opacity: 0;
   }
   to {
-    margin-left: 0%;
+    width: 90px;
+    opacity: 1;
   }
 }
 
 @keyframes glissement {
   from {
-    margin-right: 5%;
+    width: 0px;
+    opacity: 0;
   }
   to {
-    margin-left: 0%;
-  }
-}
-
-@-webkit-keyframes tt-expand {
-  0% {
-    width: 0;
-    right: 65px;
-  }
-  100% {
-    width: 55px;
-    right: 10px;
-  }
-}
-
-@keyframes tt-expand {
-  0% {
-    width: 0;
-    right: 65px;
-  }
-  100% {
-    width: 55px;
-    right: 10px;
+    width: 90px;
+    opacity: 1;
   }
 }
 
