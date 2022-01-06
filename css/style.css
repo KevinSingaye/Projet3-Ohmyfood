@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: 'Roboto';
 }
@@ -36,11 +37,6 @@ h1 {
 h3 {
   font-size: 1em;
   font-weight: bold;
-}
-
-strong {
-  position: absolute;
-  right: 20px;
 }
 
 body {
@@ -136,7 +132,7 @@ body {
 }
 
 .menu__heading h1 .fas__.fas:hover {
-  color: #bc80ea;
+  color: #9356DC;
   cursor: pointer;
 }
 
@@ -172,6 +168,33 @@ body {
 .menu__choice article {
   margin-left: 5px;
   width: 90%;
+}
+
+.menu .menu__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu .menu__texte span {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  color: black;
+  font-weight: 100;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu .menu__texte strong {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .menu article {
@@ -364,10 +387,10 @@ body {
 .menu__button {
   -webkit-box-shadow: inset 0px 0px 0px 0px #efdcfb;
           box-shadow: inset 0px 0px 0px 0px #efdcfb;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ba1e96), to(#bc80ea));
-  background: linear-gradient(to bottom, #ba1e96 5%, #bc80ea 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
   border-radius: 22px;
-  border: 1px solid #c584f3;
+  border: 1px solid #9356DC;
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
@@ -392,9 +415,9 @@ body {
 .menu__button:active {
   position: relative;
   top: 1px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #bc80ea), to(#ba1e96));
-  background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
-  background-color: #bc80ea;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  background-color: #9356DC;
 }
 
 @-webkit-keyframes menu__icon {
@@ -454,7 +477,7 @@ body {
     right: 60px;
   }
   100% {
-    width: 80px;
+    width: 110px;
     right: 10px;
   }
 }
@@ -465,7 +488,7 @@ body {
     right: 60px;
   }
   100% {
-    width: 80px;
+    width: 110px;
     right: 10px;
   }
 }
@@ -516,9 +539,9 @@ body {
 .booking__button {
   -webkit-box-shadow: inset 0px 0px 0px 0px #efdcfb;
           box-shadow: inset 0px 0px 0px 0px #efdcfb;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ba1e96), to(#bc80ea));
-  background: linear-gradient(to bottom, #ba1e96 5%, #bc80ea 100%);
-  background-color: #ba1e96;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
+  background-color: #FF79DA;
   border-radius: 22px;
   border: 1px solid #c584f3;
   display: inline-block;
@@ -537,9 +560,9 @@ body {
 .booking__button:active {
   position: relative;
   top: 1px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #bc80ea), to(#ba1e96));
-  background: linear-gradient(to bottom, #bc80ea 5%, #ba1e96 100%);
-  background-color: #bc80ea;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  background-color: #9356DC;
 }
 
 .steps {
@@ -556,6 +579,66 @@ body {
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
+  /* on initialise et nomme un compteur */
+}
+
+.steps ol {
+  counter-reset: repas;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+
+.steps li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  counter-increment: repas;
+  /* on incrémente le compteur à chaque nouveau li */
+  margin-bottom: 15px;
+  border-radius: 26px;
+  background-color: #F2F2F2;
+  padding: 10px 32px;
+  -webkit-box-shadow: 0 5px 5px 0 #c3c3c3;
+          box-shadow: 0 5px 5px 0 #c3c3c3;
+  width: 80%;
+  font-size: 20px;
+}
+
+.steps li p {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.steps li i {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.steps li:before {
+  content: counter(repas);
+  /* on affiche le compteur */
+  margin-right: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+  background: #9356DC;
+  border-radius: 60px;
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  left: 25px;
+  height: 20px;
+  width: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-weight: bold;
 }
 
 .steps__box {
@@ -594,7 +677,7 @@ body {
 .steps__cercle {
   position: absolute;
   left: 30px;
-  background: #9356dc;
+  background: #9356DC;
   border-radius: 100%;
   color: #ffffff;
   height: 25px;
@@ -763,7 +846,7 @@ section h2:after {
 
 .far:hover,
 .fa-heart:hover {
-  color: #bc80ea;
+  color: #9356DC;
   cursor: pointer;
 }
 

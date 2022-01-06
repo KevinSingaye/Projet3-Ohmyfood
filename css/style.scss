@@ -25,7 +25,8 @@
   
   $white:#ffffff;
   $lightgrey:#f6f6f6;
-  $purple:#bc80ea;
+  $purple:#9356DC;
+  $purplesec: #FF79DA;
   p {
       font-size: 0.875rem;
       font-weight: 300;
@@ -39,11 +40,6 @@
   h3 {
       font-size: 1em;
       font-weight: bold;
-  }
-  
-  strong {
-      position: absolute;
-      right: 20px;
   }
   
   body {
@@ -143,6 +139,21 @@
               ;
               width: 90%;
           }
+      }
+      .menu__texte {
+          display: flex;
+          flex-direction: row;
+      }
+      .menu__texte span {
+          flex: 8;
+          color: black;
+          font-weight: 100;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+      }
+      .menu__texte strong {
+          flex: 2;
       }
       & article {
           display: flex;
@@ -262,9 +273,9 @@
       }
       &__button {
           box-shadow: inset 0px 0px 0px 0px #efdcfb;
-          background: linear-gradient(to bottom, #ba1e96 5%, $purple 100%);
+          background: linear-gradient(to bottom, $purplesec 5%, $purple 100%);
           border-radius: 22px;
-          border: 1px solid #c584f3;
+          border: 1px solid $purple;
           cursor: pointer;
           color: $white;
           font-family: Arial;
@@ -284,7 +295,7 @@
       &__button:active {
           position: relative;
           top: 1px;
-          background: linear-gradient(to bottom, $purple 5%, #ba1e96 100%);
+          background: linear-gradient(to bottom, $purple 5%, $purplesec 100%);
           background-color: $purple;
       }
   }
@@ -326,7 +337,7 @@
           right: 60px;
       }
       100% {
-          width: 80px;
+          width: 110px;
           right: 10px;
       }
   }
@@ -391,8 +402,8 @@
       }
       &__button {
           box-shadow: inset 0px 0px 0px 0px #efdcfb;
-          background: linear-gradient(to bottom, #ba1e96 5%, $purple 100%);
-          background-color: #ba1e96;
+          background: linear-gradient(to bottom, $purplesec 5%, $purple 100%);
+          background-color: $purplesec;
           border-radius: 22px;
           border: 1px solid #c584f3;
           display: inline-block;
@@ -410,7 +421,7 @@
       &__button:active {
           position: relative;
           top: 1px;
-          background: linear-gradient(to bottom, $purple 5%, #ba1e96 100%);
+          background: linear-gradient(to bottom, $purple 5%, $purplesec 100%);
           background-color: $purple;
       }
   }
@@ -423,6 +434,54 @@
       padding-bottom: 50px;
       padding-left: 20px;
       padding-right: 20px;
+      ol {
+          counter-reset: repas;
+          padding-inline-start: 10px;
+      }
+      /* on initialise et nomme un compteur */
+      li {
+          display: flex;
+          flex-direction: row;
+          list-style-type: none;
+          counter-increment: repas;
+          /* on incrémente le compteur à chaque nouveau li */
+          margin-bottom: 15px;
+          border-radius: 26px;
+          background-color: #F2F2F2;
+          padding: 10px 32px;
+          box-shadow: 0 5px 5px 0 #c3c3c3;
+          width: 80%;
+          font-size: 20px;
+      }
+      li p {
+          margin-left: 20px;
+          font-weight: bold;
+          font-size: 16px;
+      }
+      li i {
+          margin-top: 15px;
+          margin-left: 15px;
+      }
+      li:before {
+          content: counter(repas);
+          /* on affiche le compteur */
+          margin-right: 20px;
+          margin-top: 10px;
+          vertical-align: top;
+          background: $purple;
+          border-radius: 60px;
+          font-size: 16px;
+          color: white;
+          position: absolute;
+          left: 25px;
+          height: 20px;
+          width: 10px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          padding-right: 12px;
+          padding-left: 12px;
+          font-weight: bold;
+      }
       &__box {
           margin-left: 15px;
       }
@@ -450,7 +509,7 @@
       &__cercle {
           position: absolute;
           left: 30px;
-          background: #9356dc;
+          background: $purple;
           border-radius: 100%;
           color: $white;
           height: 25px;
