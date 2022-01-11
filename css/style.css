@@ -1027,11 +1027,65 @@ footer section ul {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .steps ol {
+@media screen and (min-width: 993px) {
+  .menu__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .menu__heading h1 {
+    margin-right: 30px;
+  }
+  .steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .steps ol {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .steps li {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    left: -30px;
+  }
+  .steps li:before {
+    margin-left: 0px;
+    position: absolute;
+    left: -15px;
+  }
+  .steps li p {
+    margin-left: 70px;
+  }
+  .steps h2 {
+    margin-right: 70px;
+  }
+  .restaurant-choice__cards article {
+    position: relative;
   }
   .restaurant-choice__cards {
     -ms-flex-pack: distribute;
@@ -1059,31 +1113,37 @@ footer section ul {
   .restaurant-choice h2 {
     margin-left: 40px;
   }
+  .header__classpic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .header__classpic img {
     width: 800px;
     height: 300px;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin-left: 280px;
-    position: relative;
-    right: -350px;
+  }
+  .menu__fct {
+    width: 95%;
   }
   .header__classpic img {
     width: 800px;
   }
   .menu {
-    position: relative;
-    right: -350px;
+    width: 800px;
+    margin: 0 auto;
   }
   .menu__button {
-    position: relative;
-    right: -250px;
+    margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
   .steps {
     margin-bottom: 5px;
+    padding-bottom: 0px;
   }
   .steps li {
     width: 60%;
@@ -1102,36 +1162,43 @@ footer section ul {
     line-height: 1.6;
   }
   .steps ol {
-    margin-left: 110px;
+    margin-left: 120px;
   }
   .steps li:before {
-    margin-left: 110px;
+    margin-left: 120px;
+  }
+  .restaurant-choice__cards article {
+    position: relative;
+  }
+  .restaurant-choice__img-btn-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    position: absolute;
+    right: 20px;
   }
   footer {
     width: 100%;
   }
   .header__classpic img {
     width: 600px;
-    margin-left: 80px;
+    margin-left: 100px;
   }
   .menu {
-    margin-left: 80px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
     width: 600px;
   }
   .menu__button {
-    margin-left: 150px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .restaurant-choice__img-btn-left {
-    position: absolute;
-    right: 50px;
-  }
-  .steps__logo {
-    position: relative;
-    left: -5px;
-    bottom: -16px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
