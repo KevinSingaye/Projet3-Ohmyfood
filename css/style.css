@@ -390,8 +390,8 @@ body {
 .menu__button {
   -webkit-box-shadow: inset 0px 0px 0px 0px #FF79DA;
           box-shadow: inset 0px 0px 0px 0px #FF79DA;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom, #FF79DA 30%, #9356DC 100%);
   border-radius: 22px;
   border: 1px solid #9356DC;
   cursor: pointer;
@@ -418,9 +418,16 @@ body {
 .menu__button:active {
   position: relative;
   top: 1px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #9356DC), to(#FF79DA));
-  background: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC 70%, #FF79DA 100%);
   background-color: #9356DC;
+}
+
+.menu__button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #9356DC), color-stop(85%, #FF79DA));
+  background: linear-gradient(to bottom, #9356DC 15%, #FF79DA 85%);
+  -webkit-box-shadow: 0px 0px 10px 0px #FF79DA;
+          box-shadow: 0px 0px 10px 0px #FF79DA;
 }
 
 @-webkit-keyframes menu__icon {
@@ -565,6 +572,13 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #9356DC), to(#FF79DA));
   background: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
   background-color: #9356DC;
+}
+
+.booking__button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(70%, #FF79DA));
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 70%);
+  -webkit-box-shadow: 0px 0px 10px 0px #FF79DA;
+          box-shadow: 0px 0px 10px 0px #FF79DA;
 }
 
 .steps {
