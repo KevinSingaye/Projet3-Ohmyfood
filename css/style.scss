@@ -428,12 +428,12 @@
         &__button:active {
             position: relative;
             top: 1px;
-            background: linear-gradient(to bottom, $primary 5%, $secondary 100%);
-            background-color: $primary;
+            background: lighten($secondary, 1%);
+            box-shadow: 0px 0px 10px 0px $secondary;
         }
         &__button:hover {
-            background: linear-gradient(to bottom, $primary 0%, $secondary 70%);
-            box-shadow: 0px 0px 10px 0px $secondary;
+            background: lighten($secondary, 1%);
+            box-shadow: 0px 0px 10px 0px $primary;
         }
     }
     
@@ -463,6 +463,14 @@
             box-shadow: 0 5px 5px 0 #c3c3c3;
             width: 80%;
             font-size: 20px;
+        }
+        li:active {
+            background: lighten(#F2F2F2, 2%);
+            box-shadow: 0 5px 15px 0 #c3c3c3;
+        }
+        li:hover {
+            background: lighten(#F2F2F2, 2%);
+            box-shadow: 0 5px 15px 0 #c3c3c3;
         }
         li p {
             margin-left: 20px;
