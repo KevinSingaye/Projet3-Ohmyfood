@@ -283,6 +283,12 @@
             -webkit-animation: rotate-center 0.6s ease-in-out both;
             animation: rotate-center 0.4s ease-in-out both;
         }
+        &__icon i:hover {
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            -webkit-animation: rotate-center 0.6s ease-in-out both;
+            animation: rotate-center 0.4s ease-in-out both;
+        }
         article:active .menu__icon {
             display: flex;
             justify-content: center;
@@ -295,6 +301,23 @@
             opacity: 1;
             animation: tt-expand 0.5s ease both;
             text-overflow: ellipsis;
+        }
+        article:hover .menu__icon {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: $tertiary;
+            border-radius: 1px 20px 20px 1px;
+            animation-direction: reverse;
+            animation-duration: 2s;
+            animation-name: glissement;
+            opacity: 1;
+            animation: tt-expand 0.5s ease both;
+            text-overflow: ellipsis;
+        }
+        article:hover .menu__fct {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
         }
         &__button {
             box-shadow: inset 0px 0px 0px 0px $secondary;
@@ -938,6 +961,9 @@
         .menu__button {
             margin: 0 auto;
         }
+        footer {
+            width: 100%;
+        }
     }
     
     @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -1022,5 +1048,8 @@
             justify-content: left;
             position: absolute;
             right: 20px;
+        }
+        footer {
+            width: 100%;
         }
     }
