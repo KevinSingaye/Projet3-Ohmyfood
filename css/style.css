@@ -147,6 +147,40 @@ body {
   right: 60px;
 }
 
+.menu__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.menu__heart .fas {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(#FF79DA, #9356DC));
+  background: linear-gradient(#9356DC #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.menu__heart:hover .fas {
+  opacity: 1;
+}
+
+.menu__heart i {
+  position: absolute;
+  top: 30;
+  right: -60px;
+}
+
 .menu__choice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -852,11 +886,10 @@ section h2:after {
 }
 
 .restaurant-choice__heart i {
-  position: relative;
-  left: -30px;
-  top: -30px;
   position: absolute;
   right: 20px;
+  left: -30px;
+  top: -30px;
 }
 
 .far,
@@ -1081,10 +1114,12 @@ footer section ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .steps li {
     width: 25%;
@@ -1154,7 +1189,7 @@ footer section ul {
     width: 95%;
   }
   .header__classpic img {
-    width: 800px;
+    width: 90%;
   }
   .menu {
     width: 800px;
@@ -1208,9 +1243,16 @@ footer section ul {
   footer {
     width: 100%;
   }
+  .header__classpic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .header__classpic img {
     width: 600px;
-    margin-left: 100px;
   }
   .menu {
     margin-top: 0px;
@@ -1219,11 +1261,49 @@ footer section ul {
     margin-left: auto;
     width: 600px;
   }
+  .menu__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .menu__button {
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 360px) {
+  .header__classpic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__classpic img {
+    width: 600px;
+  }
+  .menu {
+    width: auto;
+  }
+  .restaurant-choice__cards article {
+    position: relative;
+  }
+  .restaurant-choice__img-btn-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    position: absolute;
+    right: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

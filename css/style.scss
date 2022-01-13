@@ -127,6 +127,27 @@
             top: 30px;
             right: 60px;
         }
+        &__heart {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        &__heart .fas {
+            opacity: 0;
+            background: linear-gradient($primary $secondary);
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: 1s;
+        }
+        &__heart:hover .fas {
+            opacity: 1;
+        }
+        &__heart i {
+            position: absolute;
+            top: 30;
+            right: -60px;
+        }
         &__choice {
             display: flex;
             flex-wrap: wrap;
@@ -668,11 +689,10 @@
             opacity: 1;
         }
         &__heart i {
-            position: relative;
-            left: -30px;
-            top: -30px;
             position: absolute;
             right: 20px;
+            left: -30px;
+            top: -30px;
         }
     }
     
@@ -852,7 +872,8 @@
             width: 100%;
             display: flex;
             align-items: center;
-            flex-direction: column;
+            justify-content: space-around;
+            flex-direction: row;
         }
         .steps li {
             width: 25%;
@@ -908,7 +929,7 @@
             width: 95%;
         }
         .header__classpic img {
-            width: 800px;
+            width: 90%;
         }
         .menu {
             width: 800px;
@@ -956,9 +977,12 @@
         footer {
             width: 100%;
         }
+        .header__classpic {
+            display: flex;
+            justify-content: center;
+        }
         .header__classpic img {
             width: 600px;
-            margin-left: 100px;
         }
         .menu {
             margin-top: 0px;
@@ -967,10 +991,36 @@
             margin-left: auto;
             width: 600px;
         }
+        .menu__heading {
+            display: flex;
+            justify-content: center;
+        }
         .menu__button {
             margin-top: 0px;
             margin-right: auto;
             margin-bottom: 0px;
             margin-left: auto;
+        }
+    }
+    
+    @media screen and (max-width: 767px) and (min-width: 360px) {
+        .header__classpic {
+            display: flex;
+            justify-content: center;
+        }
+        .header__classpic img {
+            width: 600px;
+        }
+        .menu {
+            width: auto;
+        }
+        .restaurant-choice__cards article {
+            position: relative
+        }
+        .restaurant-choice__img-btn-left {
+            display: flex;
+            justify-content: left;
+            position: absolute;
+            right: 20px;
         }
     }
