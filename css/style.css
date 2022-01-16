@@ -1,6 +1,12 @@
 @charset "UTF-8";
 html {
   font-family: 'Roboto';
+  overflow-x: hidden;
+}
+
+body {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 @font-face {
@@ -93,7 +99,7 @@ body {
 }
 
 .header__classpic img {
-  width: 400px;
+  width: 100%;
   height: 291px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -428,6 +434,7 @@ body {
   -webkit-animation: tt-expand 0.5s ease both;
           animation: tt-expand 0.5s ease both;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu article:hover .menu__icon {
@@ -450,6 +457,7 @@ body {
   -webkit-animation: tt-expand 0.5s ease both;
           animation: tt-expand 0.5s ease both;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu article:hover .menu__fct {
@@ -535,41 +543,39 @@ body {
 
 @-webkit-keyframes glissement {
   from {
-    margin-right: 5%;
+    margin-right: 0%;
   }
   to {
-    margin-left: 0%;
+    margin-right: 5%;
   }
 }
 
 @keyframes glissement {
   from {
-    margin-right: 5%;
+    margin-right: 0%;
   }
   to {
-    margin-left: 0%;
+    margin-right: 5%;
   }
 }
 
 @-webkit-keyframes tt-expand {
   0% {
-    width: 0;
-    right: 60px;
+    width: 0px;
   }
   100% {
-    width: 110px;
-    right: 10px;
+    width: 90px;
+    left: 0px;
   }
 }
 
 @keyframes tt-expand {
   0% {
-    width: 0;
-    right: 60px;
+    width: 0px;
   }
   100% {
-    width: 110px;
-    right: 10px;
+    width: 90px;
+    left: 0px;
   }
 }
 
@@ -1218,7 +1224,7 @@ footer section ul {
             justify-content: center;
   }
   .header__classpic img {
-    width: 800px;
+    width: 100%;
     height: 300px;
   }
   .menu__fct {
@@ -1291,7 +1297,7 @@ footer section ul {
             justify-content: center;
   }
   .header__classpic img {
-    width: 600px;
+    width: 100%;
   }
   .menu {
     margin-top: 0px;
@@ -1326,7 +1332,7 @@ footer section ul {
             justify-content: center;
   }
   .header__classpic img {
-    width: 600px;
+    width: 100%;
   }
   .menu {
     width: auto;
