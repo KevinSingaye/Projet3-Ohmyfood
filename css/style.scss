@@ -175,9 +175,10 @@
         .menu__texte {
             display: flex;
             flex-direction: row;
+            width: 100%;
         }
         .menu__texte span {
-            flex: 8;
+            flex: 9;
             color: black;
             font-weight: 100;
             overflow: hidden;
@@ -185,8 +186,7 @@
             text-overflow: ellipsis;
         }
         .menu__texte strong {
-            position: relative;
-            right: -20px;
+            flex: 1;
         }
         & article {
             display: flex;
@@ -246,21 +246,19 @@
             }
         }
         &__fct {
-            display: flex;
             flex-direction: row;
             background-color: #F2F2F2;
             border-radius: 20px;
             color: black;
-            padding: 15px 32px;
             text-decoration: none;
-            display: inline-block;
+            display: flex;
             font-size: 16px;
             cursor: pointer;
             box-shadow: 0 5px 15px 0 #c3c3c3;
             font-weight: bold;
             border: #c3c3c3;
-            height: 45px;
-            width: 90%;
+            height: 70px;
+            width: 100%;
         }
         &__fct:active {
             background-color: #f5edff;
@@ -268,14 +266,22 @@
             border-bottom-right-radius: 0px;
         }
         &__option {
-            position: relative;
-            top: -10px;
-            left: -15px;
             font-size: 0.875rem;
+            line-height: 1;
+            padding-left: 15px;
+            flex: 1;
+            padding-right: 15px;
         }
         &__icon {
             display: none;
             color: $white;
+            justify-content: center;
+            align-content: center;
+            background-color: $tertiary;
+            border-radius: 1px 20px 20px 1px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
         &__icon i {
             display: flex;
@@ -286,46 +292,17 @@
             font-size: 25px;
         }
         &__icon i:active {
-            transition-duration: 1s;
-            transition-timing-function: ease;
             -webkit-animation: rotate-center 0.6s ease-in-out both;
             animation: rotate-center 0.4s ease-in-out both;
         }
         &__icon i:hover {
-            transition-duration: 1s;
-            transition-timing-function: ease;
             -webkit-animation: rotate-center 0.6s ease-in-out both;
             animation: rotate-center 0.4s ease-in-out both;
         }
-        article:active .menu__icon {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            background-color: $tertiary;
-            border-radius: 1px 20px 20px 1px;
-            animation-direction: reverse;
-            animation-duration: 2s;
-            animation-name: glissement;
-            opacity: 1;
-            animation: tt-expand 0.5s ease both;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-        }
         article:hover .menu__icon {
             display: flex;
-            justify-content: center;
-            align-content: center;
-            background-color: $tertiary;
-            border-radius: 1px 20px 20px 1px;
-            animation-direction: reverse;
-            animation-duration: 2s;
-            animation-name: glissement;
             opacity: 1;
-            animation: tt-expand 0.5s ease both;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
+            animation: glissement 0.5s ease-in-out both;
         }
         article:hover .menu__fct {
             border-top-right-radius: 0px;
@@ -388,10 +365,10 @@
     
     @keyframes glissement {
         from {
-            margin-left: 0%;
+            width: 0px;
         }
         to {
-            margin-left: 0%;
+            width: 100px;
         }
     }
     

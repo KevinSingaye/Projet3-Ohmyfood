@@ -222,12 +222,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100%;
 }
 
 .menu .menu__texte span {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
   color: black;
   font-weight: 100;
   overflow: hidden;
@@ -236,8 +237,9 @@ body {
 }
 
 .menu .menu__texte strong {
-  position: relative;
-  right: -20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .menu article {
@@ -337,9 +339,6 @@ body {
 }
 
 .menu__fct {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -347,17 +346,18 @@ body {
   background-color: #F2F2F2;
   border-radius: 20px;
   color: black;
-  padding: 15px 32px;
   text-decoration: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 16px;
   cursor: pointer;
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
   font-weight: bold;
   border: #c3c3c3;
-  height: 45px;
-  width: 90%;
+  height: 70px;
+  width: 100%;
 }
 
 .menu__fct:active {
@@ -367,15 +367,28 @@ body {
 }
 
 .menu__option {
-  position: relative;
-  top: -10px;
-  left: -15px;
   font-size: 0.875rem;
+  line-height: 1;
+  padding-left: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-right: 15px;
 }
 
 .menu__icon {
   display: none;
   color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #99E2D0;
+  border-radius: 1px 20px 20px 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu__icon i {
@@ -394,69 +407,22 @@ body {
 }
 
 .menu__icon i:active {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
   -webkit-animation: rotate-center 0.6s ease-in-out both;
   animation: rotate-center 0.4s ease-in-out both;
 }
 
 .menu__icon i:hover {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
   -webkit-animation: rotate-center 0.6s ease-in-out both;
   animation: rotate-center 0.4s ease-in-out both;
-}
-
-.menu article:active .menu__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background-color: #99E2D0;
-  border-radius: 1px 20px 20px 1px;
-  animation-direction: reverse;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: glissement;
-          animation-name: glissement;
-  opacity: 1;
-  -webkit-animation: tt-expand 0.5s ease both;
-          animation: tt-expand 0.5s ease both;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .menu article:hover .menu__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background-color: #99E2D0;
-  border-radius: 1px 20px 20px 1px;
-  animation-direction: reverse;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: glissement;
-          animation-name: glissement;
   opacity: 1;
-  -webkit-animation: tt-expand 0.5s ease both;
-          animation: tt-expand 0.5s ease both;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  -webkit-animation: glissement 0.5s ease-in-out both;
+          animation: glissement 0.5s ease-in-out both;
 }
 
 .menu article:hover .menu__fct {
@@ -542,19 +508,19 @@ body {
 
 @-webkit-keyframes glissement {
   from {
-    margin-left: 0%;
+    width: 0px;
   }
   to {
-    margin-left: 0%;
+    width: 100px;
   }
 }
 
 @keyframes glissement {
   from {
-    margin-left: 0%;
+    width: 0px;
   }
   to {
-    margin-left: 0%;
+    width: 100px;
   }
 }
 
