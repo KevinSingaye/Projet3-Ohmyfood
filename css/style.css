@@ -1,12 +1,12 @@
 @charset "UTF-8";
-html {
-  font-family: 'Roboto';
-  overflow-x: hidden;
-}
-
 body {
   margin-left: 0px;
   margin-right: 0px;
+}
+
+html {
+  font-family: 'Roboto';
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -169,8 +169,8 @@ body {
 
 .menu__heart .fas {
   opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(#FF79DA, #9356DC));
-  background: linear-gradient(#9356DC #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   color: transparent;
   -webkit-transition: 1s;
@@ -183,7 +183,7 @@ body {
 
 .menu__heart i {
   position: absolute;
-  top: 30;
+  top: 30px;
   right: -60px;
 }
 
@@ -236,9 +236,8 @@ body {
 }
 
 .menu .menu__texte strong {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  position: relative;
+  right: -20px;
 }
 
 .menu article {
@@ -259,8 +258,7 @@ body {
 }
 
 .menu__note {
-  -webkit-animation-name: topfadein linear 1s;
-          animation-name: topfadein linear 1s;
+  animation: topfadein linear 1s;
   -webkit-animation: topfadeIn linear 1s;
   -moz-animation: topfadeIn linear 1s;
   -o-animation: topfadeIn linear 1s;
@@ -268,8 +266,7 @@ body {
 }
 
 .menu__note2 {
-  -webkit-animation-name: topfadein linear 3s;
-          animation-name: topfadein linear 3s;
+  animation: topfadein linear 3s;
   -webkit-animation: topfadeIn linear 3s;
   -moz-animation: topfadeIn linear 3s;
   -o-animation: topfadeIn linear 3s;
@@ -277,8 +274,7 @@ body {
 }
 
 .menu__note3 {
-  -webkit-animation-name: topfadein linear 5s;
-          animation-name: topfadein linear 5s;
+  animation: topfadein linear 5s;
   -webkit-animation: topfadeIn linear 5s;
   -moz-animation: topfadeIn linear 5s;
   -o-animation: topfadeIn linear 5s;
@@ -373,6 +369,7 @@ body {
 .menu__option {
   position: relative;
   top: -10px;
+  left: -15px;
   font-size: 0.875rem;
 }
 
@@ -435,6 +432,7 @@ body {
           animation: tt-expand 0.5s ease both;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu article:hover .menu__icon {
@@ -458,6 +456,7 @@ body {
           animation: tt-expand 0.5s ease both;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu article:hover .menu__fct {
@@ -543,19 +542,19 @@ body {
 
 @-webkit-keyframes glissement {
   from {
-    margin-right: 0%;
+    margin-left: 0%;
   }
   to {
-    margin-right: 5%;
+    margin-left: 0%;
   }
 }
 
 @keyframes glissement {
   from {
-    margin-right: 0%;
+    margin-left: 0%;
   }
   to {
-    margin-right: 5%;
+    margin-left: 0%;
   }
 }
 
@@ -564,8 +563,7 @@ body {
     width: 0px;
   }
   100% {
-    width: 90px;
-    left: 0px;
+    width: 80px;
   }
 }
 
@@ -574,8 +572,7 @@ body {
     width: 0px;
   }
   100% {
-    width: 90px;
-    left: 0px;
+    width: 80px;
   }
 }
 
@@ -915,8 +912,8 @@ section h2:after {
 
 .restaurant-choice__heart .fas {
   opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(#FF79DA, #9356DC));
-  background: linear-gradient(#9356DC #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   color: transparent;
   -webkit-transition: 1s;

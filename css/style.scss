@@ -1,11 +1,11 @@
-    html {
-        font-family: 'Roboto';
-        overflow-x: hidden;
-    }
-    
     body {
         margin-left: 0px;
         margin-right: 0px;
+    }
+    
+    html {
+        font-family: 'Roboto';
+        overflow-x: hidden;
     }
     
     @font-face {
@@ -141,7 +141,7 @@
         }
         &__heart .fas {
             opacity: 0;
-            background: linear-gradient($primary $secondary);
+            background: linear-gradient($primary, $secondary);
             -webkit-background-clip: text;
             color: transparent;
             transition: 1s;
@@ -151,7 +151,7 @@
         }
         &__heart i {
             position: absolute;
-            top: 30;
+            top: 30px;
             right: -60px;
         }
         &__choice {
@@ -185,7 +185,8 @@
             text-overflow: ellipsis;
         }
         .menu__texte strong {
-            flex: 2;
+            position: relative;
+            right: -20px;
         }
         & article {
             display: flex;
@@ -199,21 +200,21 @@
             box-shadow: 0 0 2px #c3c3c3;
         }
         &__note {
-            animation-name: topfadein linear 1s;
+            animation: topfadein linear 1s;
             -webkit-animation: topfadeIn linear 1s;
             -moz-animation: topfadeIn linear 1s;
             -o-animation: topfadeIn linear 1s;
             -ms-animation: topfadeIn linear 1s;
         }
         &__note2 {
-            animation-name: topfadein linear 3s;
+            animation: topfadein linear 3s;
             -webkit-animation: topfadeIn linear 3s;
             -moz-animation: topfadeIn linear 3s;
             -o-animation: topfadeIn linear 3s;
             -ms-animation: topfadeIn linear 3s;
         }
         &__note3 {
-            animation-name: topfadein linear 5s;
+            animation: topfadein linear 5s;
             -webkit-animation: topfadeIn linear 5s;
             -moz-animation: topfadeIn linear 5s;
             -o-animation: topfadeIn linear 5s;
@@ -269,6 +270,7 @@
         &__option {
             position: relative;
             top: -10px;
+            left: -15px;
             font-size: 0.875rem;
         }
         &__icon {
@@ -308,6 +310,7 @@
             animation: tt-expand 0.5s ease both;
             text-overflow: ellipsis;
             overflow: hidden;
+            white-space: nowrap;
         }
         article:hover .menu__icon {
             display: flex;
@@ -322,6 +325,7 @@
             animation: tt-expand 0.5s ease both;
             text-overflow: ellipsis;
             overflow: hidden;
+            white-space: nowrap;
         }
         article:hover .menu__fct {
             border-top-right-radius: 0px;
@@ -384,10 +388,10 @@
     
     @keyframes glissement {
         from {
-            margin-right: 0%;
+            margin-left: 0%;
         }
         to {
-            margin-right: 5%;
+            margin-left: 0%;
         }
     }
     
@@ -396,8 +400,7 @@
             width: 0px;
         }
         100% {
-            width: 90px;
-            left: 0px;
+            width: 80px;
         }
     }
     
@@ -710,7 +713,7 @@
         }
         &__heart .fas {
             opacity: 0;
-            background: linear-gradient($primary $secondary);
+            background: linear-gradient($primary, $secondary);
             -webkit-background-clip: text;
             color: transparent;
             transition: 1s;
