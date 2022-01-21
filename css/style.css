@@ -659,12 +659,14 @@ body {
   background: #f2eafb;
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
+  cursor: pointer;
 }
 
 .steps li:hover {
   background: #f2eafb;
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
+  cursor: pointer;
 }
 
 .steps li p {

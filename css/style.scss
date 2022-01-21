@@ -493,10 +493,12 @@
         li:active {
             background: lighten($primary, 35%);
             box-shadow: 0 5px 15px 0 #c3c3c3;
+            cursor: pointer;
         }
         li:hover {
             background: lighten($primary, 35%);
             box-shadow: 0 5px 15px 0 #c3c3c3;
+            cursor: pointer;
         }
         li p {
             margin-left: 20px;
