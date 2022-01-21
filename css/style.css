@@ -150,21 +150,13 @@ body {
 .menu__heading i {
   position: absolute;
   top: 30px;
-  right: 60px;
+  right: 40px;
 }
 
 .menu__heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
 }
 
 .menu__heart .fas {
@@ -182,9 +174,9 @@ body {
 }
 
 .menu__heart i {
-  position: absolute;
-  top: 30px;
-  right: -60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu__choice {
@@ -664,13 +656,13 @@ body {
 }
 
 .steps li:active {
-  background: #f7f7f7;
+  background: #f2eafb;
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
 }
 
 .steps li:hover {
-  background: #f7f7f7;
+  background: #f2eafb;
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
 }
@@ -769,10 +761,6 @@ body {
   font-size: 13px;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.steps h2 {
-  margin-left: 10px;
 }
 
 section h2:after {
@@ -1189,9 +1177,6 @@ footer section ul {
   .header__classpic img {
     width: 100%;
     height: 300px;
-  }
-  .menu__fct {
-    width: 95%;
   }
   .header__classpic img {
     width: 90%;
