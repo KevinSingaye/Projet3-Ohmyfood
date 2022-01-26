@@ -933,11 +933,11 @@ footer li:nth-child(2) {
   left: -5px;
 }
 
-footer section li {
+footer li {
   list-style-type: none;
 }
 
-footer section ul {
+footer ul {
   margin-left: 20px;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
@@ -1148,8 +1148,6 @@ footer section ul {
   }
   footer {
     width: 100%;
-  }
-  footer section {
     margin-left: 20px;
   }
   .restaurant-choice__img-btn-left {
