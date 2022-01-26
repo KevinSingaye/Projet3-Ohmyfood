@@ -27,6 +27,7 @@ html {
   src: url("Roboto-Regular.ttf");
   src: url("Roboto-Thin.ttf");
   src: url("Roboto-ThinItalic.ttf");
+  font-family: 'Shrikhand';
   src: url("Shrikhand-Regular.ttf");
 }
 
@@ -670,7 +671,8 @@ body {
 }
 
 .steps li p {
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: bold;
   font-size: 16px;
 }
@@ -691,7 +693,7 @@ body {
   font-size: 16px;
   color: white;
   position: absolute;
-  left: 25px;
+  left: 15px;
   height: 20px;
   width: 10px;
   padding-top: 6px;
@@ -812,7 +814,7 @@ section h2:after {
 .restaurant-choice__cards article {
   border-radius: 20px;
   width: 340px;
-  margin: 1rem;
+  margin: 10px auto;
   background-color: #ffffff;
 }
 
@@ -1134,21 +1136,19 @@ footer ul {
     left: -15px;
   }
   .steps li p {
-    margin-left: 70px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .steps h2 {
     margin-right: 70px;
   }
   .restaurant-choice__cards article {
     position: relative;
+    margin: 50px 5px;
   }
   .restaurant-choice__cards {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  footer {
-    width: 100%;
-    margin-left: 20px;
   }
   .restaurant-choice__img-btn-left {
     display: -webkit-box;
@@ -1199,29 +1199,25 @@ footer ul {
     padding-bottom: 0px;
   }
   .steps li {
-    width: 60%;
+    width: 80%;
     margin-bottom: 30px;
   }
   .steps li p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
-    margin-left: 80px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
   }
   .steps li i {
     font-size: 20px;
     line-height: 1.6;
   }
-  .steps ol {
-    margin-left: 120px;
-  }
-  .steps li:before {
-    margin-left: 120px;
-  }
   .restaurant-choice__cards article {
     position: relative;
+    margin: 10px auto;
   }
   .restaurant-choice__img-btn-left {
     display: -webkit-box;
@@ -1252,7 +1248,7 @@ footer ul {
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
-    width: 600px;
+    width: auto;
   }
   .menu__heading {
     display: -webkit-box;
@@ -1285,8 +1281,14 @@ footer ul {
   .menu {
     width: auto;
   }
+  .restaurant-choice__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .restaurant-choice__cards article {
     position: relative;
+    margin: 10px 10px;
   }
   .restaurant-choice__img-btn-left {
     display: -webkit-box;
