@@ -5,16 +5,16 @@ L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en
 retrouvez l'intégralité du Brief ici [Brief créatif - Ohmyfood!.pdf](https://github.com/KevinSingaye/Projet3-Ohmyfood/files/10137290/Brief.creatif.-.Ohmyfood.pdf)
 
 
-Objectifs:
+# Objectifs:
 
 - Développer un site proposant le menu de 4 grands restaurants parisiens.
 - Permettre la réservation en ligne et la composition de menus.
 
-Autorisés: HTML / CSS / Sass
+# Autorisés: HTML / CSS / Sass
 
-Interdit: Javascript / Frameworks CSS / Inline CSS
+# Interdit: Javascript / Frameworks CSS / Inline CSS
 
-Contraintes :
+# Contraintes :
 
 Approche mobile-first: oui
 Maquette mobile : oui
