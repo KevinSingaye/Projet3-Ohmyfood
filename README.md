@@ -28,3 +28,36 @@ Pour voir le résultat, consulter mon site  https://kevinsingaye.github.io/Proje
 Tester le projet
 
 Bonne visite !
+
+
+==============================================
+
+/English/
+
+This is the third Project of the Openclassroom Web Developer course
+
+The objective here is to integrate then dynamize a web page with CSS animations using the Sass preprocessor
+
+# Mission:
+
+- Develop a site offering the menu of 4 great Parisian restaurants.
+- Allow online booking and menu composition.
+
+# Allowed: HTML / CSS / Sass
+
+# Forbidden: Javascript / CSS Frameworks / Inline CSS
+
+# Constraints:
+
+Mobile-first approach: yes
+Movable model: yes
+Desktop model: to improvise
+W3C HTML validation: pass, warning allowed
+W3C CSS validation: to pass, warning allowed
+Compatibility: Latest versions of Chrome, Firefox & Safari
+
+To see the result, visit my website https://kevinsingaye.github.io/Projet3-Ohmyfood/
+
+Test the project
+
+Good visit !
