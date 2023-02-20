@@ -40,8 +40,8 @@ The objective here is to integrate then dynamize a web page with CSS animations 
 
 # Mission:
 
-- Develop a site offering the menu of 4 great Parisian restaurants.
-- Allow online booking and menu composition.
+- Develop a site displaying the menu of 4 great Parisian restaurants.
+- The user must be able to make an online reservation and choose his own menu
 
 # Allowed: HTML / CSS / Sass
 
@@ -51,7 +51,7 @@ The objective here is to integrate then dynamize a web page with CSS animations 
 
 Mobile-first approach: yes
 Movable model: yes
-Desktop model: to improvise
+Desktop model: free
 W3C HTML validation: pass, warning allowed
 W3C CSS validation: to pass, warning allowed
 Compatibility: Latest versions of Chrome, Firefox & Safari
